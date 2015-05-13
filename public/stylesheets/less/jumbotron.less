@@ -1,0 +1,54 @@
+#nnff_jumbotron {
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+.nnff_jumbotron_container {
+	position: absolute;
+	z-index: 1;
+	background-repeat: no-repeat;
+	height: 400px;
+	width: 100%;
+    -webkit-transition: opacity 1s linear; /* Safari and Chrome */
+    -moz-transition: opacity 1s linear; /* Firefox */
+    -o-transition: opacity 1s linear; /* IE 9 */
+    -ms-transition: opacity 1s linear; /* Opera */
+    transition: opacity 1s linear;	
+}
+
+.mother_child_background {
+	background-image: url('../../dist/images/mother_child_face_to_face.jpg');
+	background-position: 55% 68%;
+	@media(min-width: @screen-md) {
+		background-position: 95% 65%;
+	}
+}
+
+.couple_grass_background {
+	background-image: url('../../dist/images/couple_in_grass.jpg');
+	background-position: 75% 10%;
+	@media(min-width: @screen-md) {
+		background-position: 75% 30%;
+	}
+}
+
+.grandparents_bw_background {
+	background-image: url('../../dist/images/grandparents_bw.jpg');
+	background-position: 50% 15%;
+	@media(min-width: @screen-md) {
+		background-position: 40% 15%;
+	}
+}
+
+h1.nnff_jumbotron_header {
+	color: @fog;
+    font-family: Helvetica;
+    font-weight: bold;
+    position: relative;
+    text-shadow: 1px 1px @black;
+    @media(min-width: @screen-md) {
+    	max-width: 650px;	
+    	margin-left: 100px;
+    	margin-top: 75px;
+	}
+}

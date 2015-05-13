@@ -1,0 +1,55 @@
+#webpage_navbar {
+	background-color: #fff;
+	@media(min-width: @screen-md) {
+		margin-bottom: 0px;
+	}
+}
+
+#header_container {
+	@media(min-width: @screen-md) {
+		padding-top: 10px;
+	} 
+}
+
+#nnff_navbar_logo {
+	background: url('../../images/nnff_logo_rectangle.png') no-repeat left center;
+	width: 125px;
+	height: 40px;
+	@media(min-width: @screen-md) {
+		background: url('../../images/nnff_logo_oval_sm.gif') no-repeat left center;
+		height: 75px;
+		width: 175px;
+		position: relative;
+		z-index: 999;
+	}
+}
+
+#collapsed_navbar_button {
+	border: 1px solid @house-blue;
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 0px;
+	right: 0;
+}
+
+.icon-bar {
+	background-color: @house-blue;
+}
+
+#navbar_menu {
+	@media(min-width: @screen-md) {
+		position: relative;
+		left: 10%;
+		margin-top: 3px;
+		padding-top: 20px;
+	}
+}
+
+.navbar_list_item {
+	padding-left: 10px;
+}
+
+li.navbar_list_item.active > a {
+	font-weight: bold;
+	color: @navy-blue;
+}
