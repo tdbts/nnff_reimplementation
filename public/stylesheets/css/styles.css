@@ -6547,13 +6547,15 @@ button.close {
     display: none !important;
   }
 }
+html,
+body,
 .fullHeightWidth {
   height: 100%;
   width: 100%;
 }
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  overflow-y: hidden;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 a {
@@ -6768,11 +6770,6 @@ h1.nnff_jumbotron_header {
   -moz-transform: translateX(-50%) translatey(-50%);
   transform: translateX(-50%) translatey(-50%);
 }
-@media (max-width: 992px) {
-  .jumbotron_button {
-    opacity: 0.75;
-  }
-}
 #jumbotron_donation_button {
   background-color: #c16365;
   border-color: #070707;
@@ -6845,9 +6842,51 @@ h1.nnff_jumbotron_header {
     border-radius: 6px;
   }
 }
+.jumbotron_button {
+  font-family: copperplate gothic light;
+  font-size: 1.2em !important;
+}
+@media (max-width: 992px) {
+  .jumbotron_button {
+    opacity: 0.85;
+  }
+}
 #jumbotron_share_button:hover {
   background-color: #b2bacc;
 }
 #jumbotron_relative_wrapper {
   position: relative;
+}
+#common_name_banner {
+  position: relative;
+  padding: 30px;
+  text-align: center;
+  font-family: copperplate gothic light;
+  border-top: 1px solid #070707;
+  color: #e8e6e6;
+  background-color: #536796;
+  opacity: 0.75;
+}
+#banner_foundation_name {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  text-shadow: 0px 1px #070707;
+}
+#banner_latin_name {
+  color: #923039;
+}
+.text_block {
+  display: block;
+  margin-bottom: 10px;
+}
+@media (min-width: 1200px) {
+  .text_block {
+    display: inline;
+    margin-bottom: 0px;
+  }
+}
+#banner_common_name {
+  font-style: italic;
+  letter-spacing: 1px;
 }

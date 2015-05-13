@@ -4,14 +4,20 @@ var React = require('react'),
 var NNFFJumbotron = React.createClass({
 	getInitialState: function () {
 		return {
+			jumbotronHeight: {
+				height: 0
+			}, 
+
 			motherChildStyle: {
 				opacity: 1, 
 				id: 0
-			}, 
+			},
+
 			coupleGrassStyle: {
 				opacity: 0, 
 				id: 1
-			}, 
+			},
+
 			grandparentsBwStyle: {
 				opacity: 0, 
 				id: 2
@@ -22,6 +28,14 @@ var NNFFJumbotron = React.createClass({
 	checkModuloValue: function (prevStateKey, index) {
 		
 		return prevStateKey['id'] === (index + 1) % 3 ? 1 : 0;
+	}, 
+
+	setJumbotronHeight: function () {
+		this.setState({
+			jumbotronHeight: {
+				height: Math.max($('.nnff_jumbotron_container').height())
+			}
+		});
 	}, 
 
 	componentDidMount: function () {
@@ -59,11 +73,13 @@ var NNFFJumbotron = React.createClass({
 			index++;
 
 		}.bind(this), 5000);
+
+		this.setJumbotronHeight();
 	}, 
 
 	render: function () {
 		return (
-			<div id="nnff_jumbotron" className="jumbotron">
+			<div id="nnff_jumbotron" className="jumbotron" style={this.state.jumbotronHeight}>
 				<div id="jumbotron_relative_wrapper" className="relative_wrapper">
 					<div id="mother_child_jumbotron" className="nnff_jumbotron_container mother_child_background container" style={this.state.motherChildStyle}>
 						<h1 id="mother_child_header" className="nnff_jumbotron_header">NF can strike anyone.</h1>
