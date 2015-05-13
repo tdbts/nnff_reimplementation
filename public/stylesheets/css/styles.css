@@ -6569,7 +6569,7 @@ a:focus {
 #webpage_navbar {
   background-color: #fff;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #webpage_navbar {
     margin-bottom: 0px;
   }
@@ -6579,10 +6579,25 @@ a:focus {
     padding-top: 10px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  #header_container {
+    padding-top: 0px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .navbar-brand {
+    padding-top: 20px;
+  }
+}
 #nnff_navbar_logo {
   background: url('../../images/nnff_logo_rectangle.png') no-repeat left center;
   width: 125px;
   height: 40px;
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #nnff_navbar_logo {
+    margin-left: -25px;
+  }
 }
 @media (min-width: 992px) {
   #nnff_navbar_logo {
@@ -6611,12 +6626,36 @@ a:focus {
     padding-top: 20px;
   }
 }
-.navbar_list_item {
-  padding-left: 10px;
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #navbar_menu {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #navbar_menu {
+    margin-top: 0px;
+    margin-left: 75px;
+    padding-top: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar_list_item {
+    padding-left: 10px;
+  }
 }
 li.navbar_list_item.active > a {
   font-weight: bold;
   color: #0a226e;
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  li.navbar_list_item {
+    padding-left: 0px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  li.navbar_list_item a {
+    padding: 8px;
+  }
 }
 .carousel {
   width: auto;
@@ -6687,11 +6726,128 @@ h1.nnff_jumbotron_header {
   font-weight: bold;
   position: relative;
   text-shadow: 1px 1px #070707;
+  margin-top: 20px;
+  max-width: 300px;
+  line-height: 1.3em;
 }
 @media (min-width: 992px) {
   h1.nnff_jumbotron_header {
     max-width: 650px;
     margin-left: 100px;
     margin-top: 75px;
+    line-height: 1.1em;
   }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  h1.nnff_jumbotron_header {
+    max-width: 650px;
+  }
+}
+#jumbotron_donation_button_container {
+  position: absolute;
+  z-index: 50;
+  margin-top: 250px;
+}
+@media (min-width: 992px) {
+  #jumbotron_donation_button_container {
+    margin-left: 120px;
+    margin-top: 300px;
+  }
+}
+.background_color_transition {
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+.horizontallyCentered {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translatey(-50%);
+  -moz-transform: translateX(-50%) translatey(-50%);
+  transform: translateX(-50%) translatey(-50%);
+}
+@media (max-width: 992px) {
+  .jumbotron_button {
+    opacity: 0.75;
+  }
+}
+#jumbotron_donation_button {
+  background-color: #c16365;
+  border-color: #070707;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+@media (max-width: 992px) {
+  #jumbotron_donation_button {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translatey(-50%);
+    -moz-transform: translateX(-50%) translatey(-50%);
+    transform: translateX(-50%) translatey(-50%);
+  }
+}
+@media (min-width: 992px) {
+  #jumbotron_donation_button {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+  }
+}
+#jumbotron_donation_button:hover {
+  background-color: #cd8283;
+}
+#jumbotron_share_button_container {
+  position: absolute;
+  z-index: 50;
+  margin-top: 315px;
+}
+@media (min-width: 992px) {
+  #jumbotron_share_button_container {
+    margin-left: 325px;
+    margin-top: 300px;
+  }
+}
+#jumbotron_share_button {
+  background-color: #9fa9c0;
+  border-color: #070707;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+@media (max-width: 992px) {
+  #jumbotron_share_button {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translatey(-50%);
+    -moz-transform: translateX(-50%) translatey(-50%);
+    transform: translateX(-50%) translatey(-50%);
+  }
+}
+@media (min-width: 992px) {
+  #jumbotron_share_button {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+  }
+}
+#jumbotron_share_button:hover {
+  background-color: #b2bacc;
+}
+#jumbotron_relative_wrapper {
+  position: relative;
 }

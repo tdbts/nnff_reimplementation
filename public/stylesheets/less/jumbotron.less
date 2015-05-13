@@ -46,9 +46,100 @@ h1.nnff_jumbotron_header {
     font-weight: bold;
     position: relative;
     text-shadow: 1px 1px @black;
+    margin-top: 20px;
+    max-width: 300px;
+    line-height: 1.3em;
     @media(min-width: @screen-md) {
     	max-width: 650px;	
     	margin-left: 100px;
     	margin-top: 75px;
+    	line-height: 1.1em;
 	}
+	@media only screen and (min-width: @screen-sm) and (max-width: @screen-md) {
+		max-width: 650px;
+	}
+}
+
+#jumbotron_donation_button_container {
+	position: absolute;
+	z-index: 50;
+	margin-top: 250px;
+	@media(min-width: @screen-md) {
+		margin-left: 120px;
+		margin-top: 300px;
+	}
+}
+
+.background_color_transition {
+	-webkit-transition: background-color .5s ease;
+	-moz-transition: background-color .5s ease;
+	-o-transition: background-color .5s ease;
+	-ms-transition: background-color .5s ease;
+	transition: background-color .5s ease;	
+}
+
+.horizontallyCentered {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translatey(-50%);
+    -moz-transform: translateX(-50%) translatey(-50%);
+    transform: translateX(-50%) translatey(-50%);		
+}
+
+.jumbotron_button {
+	@media(max-width: @screen-md) {
+		opacity: 0.75;
+	}
+}
+
+#jumbotron_donation_button {
+	background-color: @salmon;
+	border-color: @black;
+	.background_color_transition;
+	@media(max-width: @screen-md) {
+		width: 90%;
+		max-width: 450px;
+		position: absolute;
+		.horizontallyCentered;
+	}	
+	@media(min-width: @screen-md) {
+		.btn-lg;
+	}
+}
+
+#jumbotron_donation_button:hover {
+	background-color: #cd8283;
+}
+
+#jumbotron_share_button_container {
+	position: absolute;
+	z-index: 50;
+	margin-top: 315px;
+	@media(min-width: @screen-md) {
+		margin-left: 325px;
+		margin-top: 300px;
+	}
+}
+
+#jumbotron_share_button {
+	background-color: @heather-grey;
+	border-color: @black;
+	.background_color_transition;
+	@media(max-width: @screen-md) {
+		width: 90%;
+		max-width: 450px;
+		position: absolute;
+	    .horizontallyCentered;		
+	}
+	@media(min-width: @screen-md) {
+		.btn-lg;
+	}	
+}
+
+#jumbotron_share_button:hover {
+	background-color: #b2bacc;
+}
+
+#jumbotron_relative_wrapper {
+	position: relative;
 }

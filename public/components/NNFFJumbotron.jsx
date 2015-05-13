@@ -64,15 +64,23 @@ var NNFFJumbotron = React.createClass({
 	render: function () {
 		return (
 			<div id="nnff_jumbotron" className="jumbotron">
-				<div id="mother_child_jumbotron" className="nnff_jumbotron_container mother_child_background container" style={this.state.motherChildStyle}>
-					<h1 id="mother_child_header" className="nnff_jumbotron_header">NF can strike anyone.</h1>
-				</div>
-				<div id="couple_grass_jumbotron" className="nnff_jumbotron_container couple_grass_background container" style={this.state.coupleGrassStyle}>
-					<h1 id="couple_grass_header" className="nnff_jumbotron_header">Any age. Any gender. Any ethnicity.</h1>
-				</div>
-				<div id="grandparents_bw_jumbotron" className="nnff_jumbotron_container grandparents_bw_background container" style={this.state.grandparentsBwStyle}>
-					<h1 id="grandparents_bw_header" className="nnff_jumbotron_header">Get the facts, help save lives.</h1>
-				</div>
+				<div id="jumbotron_relative_wrapper" className="relative_wrapper">
+					<div id="mother_child_jumbotron" className="nnff_jumbotron_container mother_child_background container" style={this.state.motherChildStyle}>
+						<h1 id="mother_child_header" className="nnff_jumbotron_header">NF can strike anyone.</h1>
+					</div>
+					<div id="couple_grass_jumbotron" className="nnff_jumbotron_container couple_grass_background container" style={this.state.coupleGrassStyle}>
+						<h1 id="couple_grass_header" className="nnff_jumbotron_header">Any age. Any gender. Any ethnicity.</h1>
+					</div>
+					<div id="grandparents_bw_jumbotron" className="nnff_jumbotron_container grandparents_bw_background container" style={this.state.grandparentsBwStyle}>
+						<h1 id="grandparents_bw_header" className="nnff_jumbotron_header">Get the facts, help save lives.</h1>
+					</div>
+					<div id="jumbotron_donation_button_container" className="fullHeightWidth">
+						<button id="jumbotron_donation_button" className="btn btn-danger jumbotron_button"><span className="fa fa-heartbeat"></span> Make a Donation</button>
+					</div>
+					<div id="jumbotron_share_button_container" className="fullHeightWidth">
+						<button id="jumbotron_share_button" className="btn btn-warning jumbotron_button"><span className="fa fa-newspaper-o"></span> Share Your Experience</button>
+					</div>
+				</div>	
 			</div>
 		);
 	}
