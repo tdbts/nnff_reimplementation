@@ -6917,6 +6917,7 @@ h1.nnff_jumbotron_header {
   font-family: "Times New Roman", Times, serif;
   line-height: 1.4em;
   font-size: 1.3em;
+  margin-top: 10px;
 }
 @media (max-width: 768px) {
   .column {
