@@ -6890,3 +6890,84 @@ h1.nnff_jumbotron_header {
   font-style: italic;
   letter-spacing: 1px;
 }
+#welcome_section_wrapper {
+  padding-top: 30px;
+}
+.glyphicon_container {
+  margin: 0 auto;
+  padding: 20px 20px 0px 20px;
+  width: 50%;
+}
+.welcome_column_glyphicon {
+  display: block;
+  text-align: center;
+  color: #923039;
+}
+.column_title_container {
+  border-bottom: 1px solid grey;
+  padding: 10px;
+}
+.column_title {
+  font-family: Arial;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.column_text {
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.4em;
+  font-size: 1.3em;
+}
+@media (max-width: 768px) {
+  .column {
+    position: relative;
+    float: left;
+    width: 66.66666667%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 16.66666667%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .column {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) and (min-width: 768px) {
+  .column {
+    float: left;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .column {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) and (min-width: 992px) {
+  .column {
+    float: left;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .column {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (min-width: 1200px) and (min-width: 1200px) {
+  .column {
+    float: left;
+    width: 25%;
+  }
+}
