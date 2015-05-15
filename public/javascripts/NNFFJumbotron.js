@@ -27,7 +27,7 @@ var NNFFJumbotron = React.createClass({displayName: "NNFFJumbotron",
 
 	checkModuloValue: function (prevStateKey, index) {
 		
-		return prevStateKey['id'] === (index + 1) % 3 ? 1 : 0;
+		return prevStateKey.id === (index + 1) % 3 ? 1 : 0;
 	}, 
 
 	setJumbotronHeight: function () {

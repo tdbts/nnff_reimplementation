@@ -6892,6 +6892,7 @@ h1.nnff_jumbotron_header {
 }
 #welcome_section_wrapper {
   padding: 30px 0;
+  margin: 10px 0 50px 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   #welcome_section_container_two_rows {
@@ -6980,4 +6981,26 @@ h1.nnff_jumbotron_header {
     float: left;
     width: 25%;
   }
+}
+@media (min-width: 1200px) {
+  #featured_articles_container {
+    width: 90%;
+  }
+}
+#emerging_treatment_panel_lead {
+  font-size: 20px;
+}
+.article_text {
+  font-size: 15px;
+}
+.article_text_span {
+  line-height: 1.6em;
+}
+#dr_crew_thumbnail_container {
+  max-width: 200px;
+  float: right;
+  margin-left: 30px;
+}
+#dr_crew_thumbnail_text {
+  font-size: 13px;
 }

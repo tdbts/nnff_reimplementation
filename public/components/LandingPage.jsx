@@ -1,7 +1,8 @@
 var React = require('react'), 
 	NNFFJumbotron = require('./NNFFJumbotron'), 
 	CommonNameBanner = require('./CommonNameBanner'), 
-	WelcomeRow = require('./WelcomeRow');
+	WelcomeRow = require('./WelcomeRow'), 
+	FeaturedArticles = require('./FeaturedArticles');
 
 var LandingPage = React.createClass({
 	render: function () {
@@ -10,6 +11,7 @@ var LandingPage = React.createClass({
 				<NNFFJumbotron />
 				<CommonNameBanner />
 				<WelcomeRow />
+				<FeaturedArticles />
 			</div>
 		);
 	}
