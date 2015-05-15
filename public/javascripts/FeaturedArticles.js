@@ -9,8 +9,8 @@ var FeaturedArticles = React.createClass({displayName: "FeaturedArticles",
 					React.createElement("div", {className: "col-sm-12 col-md-6"}, 
 						React.createElement(EmergingTreatmentPanel, null)
 					), 
-					React.createElement("div", {className: "col-sm-12 col-md-6"}, 
-						React.createElement(EmergingTreatmentPanel, null)
+					React.createElement("div", {className: "col-sm-12 col-md-6"}
+						
 					)					
 				)
 			)

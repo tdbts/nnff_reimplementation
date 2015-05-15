@@ -6997,10 +6997,30 @@ h1.nnff_jumbotron_header {
   line-height: 1.6em;
 }
 #dr_crew_thumbnail_container {
-  max-width: 200px;
+  max-width: 225px;
   float: right;
   margin-left: 30px;
+  padding: 5px;
+}
+#dr_crew_image {
+  max-width: 100%;
 }
 #dr_crew_thumbnail_text {
   font-size: 13px;
+}
+#dr_crew_alt_thumbnail_container {
+  float: right;
+  max-width: 50%;
+  padding: 5px;
+}
+#dr_crew_alt_image {
+  max-width: 50%;
+  max-height: 100%;
+  float: left;
+  margin-right: 10px;
+}
+@media screen only and (min-width: 768px) and (max-width: 992px) {
+  #dr_crew_alt_image {
+    max-height: 200px;
+  }
 }

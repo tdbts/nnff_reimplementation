@@ -10,7 +10,7 @@ var FeaturedArticles = React.createClass({
 						<EmergingTreatmentPanel />
 					</div>
 					<div className="col-sm-12 col-md-6">
-						<EmergingTreatmentPanel />
+						
 					</div>					
 				</div>
 			</div>
