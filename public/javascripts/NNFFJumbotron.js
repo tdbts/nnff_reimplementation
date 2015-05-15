@@ -40,9 +40,6 @@ var NNFFJumbotron = React.createClass({displayName: "NNFFJumbotron",
 
 	componentDidMount: function () {
 		var index = 0, 
-			previousIndex = null, 
-			currentVisibleBackground, 
-			nextVisibleBackground, 
 			jumbotronStates = [
 				'motherChildStyle', 
 				'coupleGrassStyle', 

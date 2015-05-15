@@ -29015,9 +29015,6 @@ var NNFFJumbotron = React.createClass({displayName: "NNFFJumbotron",
 
 	componentDidMount: function () {
 		var index = 0, 
-			previousIndex = null, 
-			currentVisibleBackground, 
-			nextVisibleBackground, 
 			jumbotronStates = [
 				'motherChildStyle', 
 				'coupleGrassStyle', 
@@ -29197,8 +29194,6 @@ var WelcomeRow = React.createClass({displayName: "WelcomeRow",
 						this.getTextColumnComponent('support')
 					)
 				), 
-
-
 				React.createElement("div", {id: "welcome_section_container_one_row", className: "container-fluid welcome_section_container visible-lg-block"}, 
 					React.createElement("div", {id: "welcome_row_full_width", className: "welcome_section_row row"}, 
 						this.getTextColumnComponent('thankYou'), 
