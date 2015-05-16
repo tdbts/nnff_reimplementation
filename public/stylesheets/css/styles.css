@@ -7004,6 +7004,7 @@ h1.nnff_jumbotron_header {
 }
 #dr_crew_image {
   max-width: 100%;
+  max-height: 200px;
 }
 #dr_crew_thumbnail_text {
   font-size: 13px;
@@ -7022,5 +7023,10 @@ h1.nnff_jumbotron_header {
 @media screen only and (min-width: 768px) and (max-width: 992px) {
   #dr_crew_alt_image {
     max-height: 200px;
+  }
+}
+@media (max-width: 450px) {
+  #dr_crew_thumbnail_container {
+    float: none;
   }
 }
