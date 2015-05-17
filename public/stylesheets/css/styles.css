@@ -7030,3 +7030,6 @@ h1.nnff_jumbotron_header {
     float: none;
   }
 }
+.keep_same_line {
+  display: block;
+}
