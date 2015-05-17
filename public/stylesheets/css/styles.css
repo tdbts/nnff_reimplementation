@@ -7028,6 +7028,8 @@ h1.nnff_jumbotron_header {
 @media (max-width: 450px) {
   #dr_crew_thumbnail_container {
     float: none;
+    display: block;
+    margin: 0 auto;
   }
 }
 .keep_same_line {
