@@ -6987,6 +6987,9 @@ h1.nnff_jumbotron_header {
     width: 90%;
   }
 }
+.panel_heading_text {
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+}
 #emerging_treatment_panel_lead {
   font-size: 20px;
 }
@@ -7060,4 +7063,7 @@ h1.nnff_jumbotron_header {
 .blockquote_text {
   margin-top: 15px;
   line-height: 1.4em;
+}
+.inline_book_title {
+  font-size: 1.1em;
 }

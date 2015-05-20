@@ -6,13 +6,13 @@ var Panel = React.createClass({displayName: "Panel",
 			panelType: "danger"
 		};
 	},
-		
+
 	render: function () { 
 		return (
 			React.createElement("div", {id: this.props.panelName + "_panel_container", className: "panel_container"}, 
 				React.createElement("div", {className: "panel panel-" + this.props.panelType}, 
 					React.createElement("div", {className: "panel-heading"}, 
-						React.createElement("h3", null, this.props.headingText)
+						React.createElement("h3", {className: "panel_heading_text"}, this.props.headingText)
 					), 
 					React.createElement("div", {className: "panel-body"}, 
 						this.props.bodyContent

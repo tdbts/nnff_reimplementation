@@ -6,13 +6,13 @@ var Panel = React.createClass({
 			panelType: "danger"
 		};
 	},
-		
+
 	render: function () { 
 		return (
 			<div id={this.props.panelName + "_panel_container"} className="panel_container">
 				<div className={"panel panel-" + this.props.panelType}>
 					<div className="panel-heading">
-						<h3>{this.props.headingText}</h3>
+						<h3 className="panel_heading_text">{this.props.headingText}</h3>
 					</div>
 					<div className="panel-body">
 						{this.props.bodyContent}
