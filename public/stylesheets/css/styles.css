@@ -7009,6 +7009,8 @@ h1.nnff_jumbotron_header {
   max-width: 100%;
   max-height: 200px;
   box-shadow: 3px 3px 5px #070707;
+  -webkit-box-shadow: 3px 3px 5px #070707;
+  -moz-box-shadow: 3px 3px 5px #070707;
 }
 #dr_crew_thumbnail_text {
   font-size: 13px;
@@ -7034,7 +7036,7 @@ h1.nnff_jumbotron_header {
   #dr_crew_thumbnail_container {
     float: none;
     display: block;
-    margin: 0 auto;
+    margin: 15px auto 15px auto;
   }
 }
 .keep_same_line {
@@ -7050,6 +7052,8 @@ h1.nnff_jumbotron_header {
 @media (max-width: 480px) {
   #book_cover_image {
     float: none;
+    display: block;
+    margin: 0 auto;
   }
 }
 #book_second_edition_panel_lead {

@@ -9,6 +9,8 @@
 	max-width: 100%;
 	max-height: 200px;
 	box-shadow: 3px 3px 5px @black;
+	-webkit-box-shadow: 3px 3px 5px @black;
+	-moz-box-shadow: 3px 3px 5px @black;	
 }
 
 #dr_crew_thumbnail_text {
@@ -30,16 +32,13 @@
 	@media screen only and (min-width: @screen-sm) and (max-width: @screen-md) {
 		max-height: 200px;
 	}
-	@media screen only and (min-width: @screen-xs) and (max-width: @screen-sm) {
-
-	}
 }
 
 #dr_crew_thumbnail_container {
 	@media (max-width: 450px) {
 		float: none;
 		display: block;
-		margin: 0 auto;
+		margin: 15px auto 15px auto;
 	}
 }
 
