@@ -10,11 +10,11 @@ var gulp = require('gulp'),
 	react = require('gulp-react'), 
 	logChanges = require('./src/logChanges');
 
-gulp.task('minify-images', function () {
-	return gulp.src('public/images/*')
-		.pipe(imagemin())	
-		.pipe(gulp.dest('public/dist/images'));
-});
+// gulp.task('minify-images', function () {
+// 	return gulp.src('public/images/*')
+// 		.pipe(imagemin())	
+// 		.pipe(gulp.dest('public/dist/images'));
+// });
 
 gulp.task('build-less', function () {
 	console.log("BUILDING LESS.");

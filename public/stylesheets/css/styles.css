@@ -6565,6 +6565,13 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+.button_background_color_transition {
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
 .topper {
   height: 5px;
   background-color: #923039;
@@ -6641,8 +6648,13 @@ body {
     padding-top: 0px;
   }
 }
-@media (min-width: 1200px) {
-  .navbar_list_item {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  li.navbar_list_item {
+    padding-left: 8px;
+  }
+}
+@media (min-width: 992px) {
+  li.navbar_list_item {
     padding-left: 10px;
   }
 }
@@ -6656,11 +6668,6 @@ a.navbar_link:focus {
 li.navbar_list_item.active > a {
   font-weight: bold;
   color: #0a226e;
-}
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  li.navbar_list_item {
-    padding-left: 0px;
-  }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   li.navbar_list_item a {
@@ -6772,13 +6779,6 @@ h1.nnff_jumbotron_header {
     margin-top: 300px;
   }
 }
-.background_color_transition {
-  -webkit-transition: background-color 0.5s ease;
-  -moz-transition: background-color 0.5s ease;
-  -o-transition: background-color 0.5s ease;
-  -ms-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
-}
 .horizontallyCentered {
   left: 50%;
   top: 50%;
@@ -6882,6 +6882,7 @@ h1.nnff_jumbotron_header {
   color: #e8e6e6;
   background-color: #536796;
   opacity: 0.75;
+  box-shadow: 0px 1px 5px #070707;
 }
 #banner_foundation_name {
   margin-top: 0px;
@@ -6908,7 +6909,7 @@ h1.nnff_jumbotron_header {
 }
 #welcome_section_wrapper {
   padding: 30px 0;
-  margin: 10px 0 50px 0;
+  margin: 10px 0 30px 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   #welcome_section_container_two_rows {
@@ -6998,10 +6999,93 @@ h1.nnff_jumbotron_header {
     width: 25%;
   }
 }
+#mailing_list_invitation_container {
+  margin: 30px 0px 75px 0px;
+}
+#mailing_list_invitation_jumbotron {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/medical_notebook_with_stethoscope.jpg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/medical_notebook_with_stethoscope.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/medical_notebook_with_stethoscope.jpg');
+  background-position: 20% 65%;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  box-shadow: 2px 2px 10px #070707;
+}
+@media (min-width: 992px) {
+  #mailing_list_invitation_jumbotron {
+    max-width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  #mailing_list_invitation_jumbotron {
+    background-position: 0% 65%;
+  }
+}
+#mailing_list_invitation_icon {
+  color: #e8e6e6;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+#mailing_list_invitation_header_container {
+  margin-bottom: 15px;
+}
+#mailing_list_invitation_header {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+#mailing_list_invitation_header,
+#mailing_list_invitation_info {
+  color: #e8e6e6;
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+  text-align: center;
+}
+#mailing_list_invitation_icon {
+  text-shadow: 0px 1px 5px #070707;
+}
+#mailing_list_invitation_header {
+  text-shadow: 0px 1px 1px #070707;
+}
+#mailing_list_invitation_info_container {
+  margin-bottom: 20px;
+}
+#mailing_list_invitation_info {
+  text-shadow: 1px 1px 1px #070707;
+  line-height: 1.3em;
+}
+#mailing_list_invitation_button {
+  display: block;
+  margin: 0 auto;
+  min-width: 150px;
+  box-shadow: 3px 3px 5px #070707;
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+  letter-spacing: 0.5px;
+  background-color: #923039;
+  border: 1px solid #070707;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+#mailing_list_invitation_button:hover,
+#mailing_list_invitation_button:active:focus {
+  background-color: #c16365;
+}
 @media (min-width: 1200px) {
   #featured_articles_container {
     width: 90%;
   }
+}
+.panel {
+  box-shadow: 1px 1px 7px grey;
+  margin-bottom: 50px;
 }
 .panel_heading_text {
   font-family: Copperplate, 'Copperplate Gothic Light', fantasy;

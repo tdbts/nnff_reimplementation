@@ -65,10 +65,13 @@
 	}
 }
 
-.navbar_list_item {
-	@media(min-width: @screen-lg) {
-		padding-left: 10px;
+li.navbar_list_item {
+	@media only screen and (min-width: @screen-sm-min) and (max-width: @screen-lg-min) {
+		padding-left: 8px;
 	}
+	@media (min-width: @screen-md-min) {
+		padding-left: 10px;
+	}	
 }
 
 a.navbar_link {
@@ -83,12 +86,6 @@ a.navbar_link:focus {
 li.navbar_list_item.active > a {
 	font-weight: bold;
 	color: @navy-blue;
-}
-
-li.navbar_list_item {
-	@media only screen and (min-width: @screen-sm) and (max-width: @screen-md) {
-		padding-left: 0px;
-	}
 }
 
 li.navbar_list_item a {

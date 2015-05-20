@@ -1,0 +1,81 @@
+#mailing_list_invitation_container {
+	margin: 30px 0px 75px 0px;
+}
+
+#mailing_list_invitation_jumbotron {
+	max-width: 80%;
+	@media (min-width: @screen-md-min) {
+		max-width: 60%;
+	}
+	display: block;
+	margin: 0 auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/medical_notebook_with_stethoscope.jpg');
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/medical_notebook_with_stethoscope.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/medical_notebook_with_stethoscope.jpg');
+	background-position: 20% 65%;
+	@media (min-width: @screen-md-min) {
+		background-position: 0% 65%;
+	}
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	box-shadow: 2px 2px 10px @black;	
+}
+
+#mailing_list_invitation_icon {
+	color: @fog;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+
+#mailing_list_invitation_header_container {
+	margin-bottom: 15px;
+}
+
+#mailing_list_invitation_header {
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+#mailing_list_invitation_header, #mailing_list_invitation_info {
+	color: @fog;
+	font-family: @primaryFont;
+	.text-center;
+}
+
+#mailing_list_invitation_icon {
+	text-shadow: 0px 1px 5px @black;
+}
+
+#mailing_list_invitation_header {
+	text-shadow: 0px 1px 1px @black;
+}
+
+#mailing_list_invitation_info_container {
+	margin-bottom: 20px;
+}
+
+#mailing_list_invitation_info {
+	text-shadow: 1px 1px 1px @black;
+	line-height: 1.3em;
+}
+
+#mailing_list_invitation_button {
+	display: block;
+	margin: 0 auto;
+	min-width: 150px;
+	box-shadow: 3px 3px 5px @black;
+	font-family: @primaryFont;
+	letter-spacing: 0.5px;
+	background-color: @barn-red;
+	border: 1px solid @black;
+	.button_background_color_transition;
+}
+
+#mailing_list_invitation_button:hover, 
+#mailing_list_invitation_button:active:focus {
+	background-color: @salmon;
+}
