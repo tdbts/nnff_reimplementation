@@ -73,6 +73,7 @@
 
 a.navbar_link {
 	color: @salmon;
+	font-family: @primaryFont;
 }
 
 a.navbar_link:focus {
@@ -94,4 +95,14 @@ li.navbar_list_item a {
 	@media only screen and (min-width: @screen-sm) and (max-width: @screen-md) {
 		padding: 8px;
 	}
+}
+
+#facts_dropdown_menu {
+	@media(min-width: @screen-lg-min) {
+		margin-left: 10px;
+	}
+}
+
+.dropdown-menu li a {
+	font-family: @primaryFont;
 }

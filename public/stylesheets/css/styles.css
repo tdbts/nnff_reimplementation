@@ -6648,6 +6648,7 @@ body {
 }
 a.navbar_link {
   color: #c16365;
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
 }
 a.navbar_link:focus {
   color: #0a226e;
@@ -6665,6 +6666,14 @@ li.navbar_list_item.active > a {
   li.navbar_list_item a {
     padding: 8px;
   }
+}
+@media (min-width: 1200px) {
+  #facts_dropdown_menu {
+    margin-left: 10px;
+  }
+}
+.dropdown-menu li a {
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
 }
 .carousel {
   width: auto;
@@ -6850,7 +6859,7 @@ h1.nnff_jumbotron_header {
   }
 }
 .jumbotron_button {
-  font-family: copperplate gothic light;
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
   font-size: 1.2em !important;
 }
 @media (max-width: 992px) {
@@ -6868,7 +6877,7 @@ h1.nnff_jumbotron_header {
   position: relative;
   padding: 30px;
   text-align: center;
-  font-family: copperplate gothic light;
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
   border-top: 1px solid #070707;
   color: #e8e6e6;
   background-color: #536796;

@@ -3,14 +3,18 @@ ul#navbar_menu.nav.navbar-nav
 		a.navbar_link(href="#") Home
 	li#about.navbar_list_item(class= activeTab === '/about' ? 'active' : undefined)
 		a.navbar_link(href="#") About Us
-	li#facts.navbar_list_item(class= activeTab === '/facts' ? 'active' : undefined)
-		a.navbar_link(href="#") Get the Facts
+	li#facts.navbar_list_item.dropdown(class= activeTab === '/facts' ? 'active' : undefined)
+		a.dropdown-toggle.navbar_link(href="#" data-toggle="dropdown") Get the Facts
+			span.caret 
+		ul#facts_dropdown_menu.dropdown-menu 
+			li
+				a(href="#") For Medical Professionals
 	li#stories.navbar_list_item(class= activeTab === '/stories' ? 'acticve' : undefined) 
 		a.navbar_link(href="#") Survivor Stories 
 	li#dedications.navbar_list_item(class= activeTab === '/dedications' ? 'acticve' : undefined) 
 		a.navbar_link(href="#") Dedications 
-	li#professionals.navbar_list_item(class= activeTab === '/professionals' ? 'active' : undefined)
-		a.navbar_link(href="#") For Medical Professionals 
+	li#professionals.navbar_list_item(class= activeTab === '/book' ? 'active' : undefined)
+		a.navbar_link(href="#") Book 
 	li#partners.navbar_list_item(class= activeTab === '/partners' ? 'active' : undefined)
 		a.navbar_link(href="#") Partners
 
