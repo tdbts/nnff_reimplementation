@@ -7005,6 +7005,7 @@ h1.nnff_jumbotron_header {
 #dr_crew_image {
   max-width: 100%;
   max-height: 200px;
+  box-shadow: 3px 3px 5px #070707;
 }
 #dr_crew_thumbnail_text {
   font-size: 13px;
@@ -7035,4 +7036,28 @@ h1.nnff_jumbotron_header {
 }
 .keep_same_line {
   display: block;
+}
+#book_cover_image {
+  float: left;
+  margin: 0px 20px 0px 15px;
+  -webkit-box-shadow: 3px 3px 5px #070707;
+  -moz-box-shadow: 3px 3px 5px #070707;
+  box-shadow: 3px 3px 5px #070707;
+}
+@media (max-width: 480px) {
+  #book_cover_image {
+    float: none;
+  }
+}
+#book_second_edition_panel_lead {
+  font-size: 20px;
+}
+@media (max-width: 480px) {
+  #book_second_edition_panel_lead {
+    margin-top: 20px;
+  }
+}
+.blockquote_text {
+  margin-top: 15px;
+  line-height: 1.4em;
 }
