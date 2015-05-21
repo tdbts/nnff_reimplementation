@@ -1,15 +1,14 @@
-var React = require('react');
+var React = require('react'), 
+	FactSheetHeader = require('./FactSheetHeader'), 
+	FactSheetAccordion = require('./FactSheetAccordion');
 
 var FactSheet = React.createClass({displayName: "FactSheet",
 	render: function () {
 		return (
 			React.createElement("div", {id: "faqs_page_container", className: "fullHeightWidth"}, 
-				React.createElement("div", {id: "faqs_jumbotron", className: "jumbotron"}, 
-					React.createElement("div", {id: "container_inside_faq_header", className: "container"}, 
-						React.createElement("div", {id: "faqs_header", className: "page-header"}, 
-							React.createElement("span", {id: "faqs_header_text"}, "Fact Sheet")
-						)
-					)
+				React.createElement(FactSheetHeader, null), 
+				React.createElement("div", {id: "fact_sheet_accordion_container", className: "container"}, 
+					React.createElement(FactSheetAccordion, {accordionID: "faqAccordion"})
 				)
 			)
 		);
