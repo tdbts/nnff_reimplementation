@@ -1,6 +1,6 @@
 ul#navbar_menu.nav.navbar-nav
 	li#home.navbar_list_item(class= activeTab === '/' ? 'active' : undefined)
-		a.navbar_link(href="#") Home
+		a.navbar_link(href="/") Home
 	li#about.navbar_list_item(class= activeTab === '/about' ? 'active' : undefined)
 		a.navbar_link(href="#") About Us
 	li#facts.navbar_list_item.dropdown(class= activeTab === '/facts' ? 'active' : undefined)
@@ -8,7 +8,7 @@ ul#navbar_menu.nav.navbar-nav
 			span.caret 
 		ul#facts_dropdown_menu.dropdown-menu 
 			li
-				a(href="#") FAQ
+				a(href="/facts/factsheet/") Fact Sheet
 			li
 				a(href="#") For Medical Professionals
 	li#stories.navbar_list_item(class= activeTab === '/stories' ? 'acticve' : undefined) 

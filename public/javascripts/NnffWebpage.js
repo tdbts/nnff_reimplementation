@@ -1,7 +1,8 @@
 var React = require('react'), 
-	LandingPage = require('./LandingPage');
+	LandingPage = require('./LandingPage'), 
+	FactSheet = require('./FactSheet');
 
-var PortfolioPageContent = React.createClass({displayName: "PortfolioPageContent",
+var NnffWebpage = React.createClass({displayName: "NnffWebpage",
 	getInitialState: function () {
 		return {
 			currentPageView: this.determineViewToRender()
@@ -15,6 +16,10 @@ var PortfolioPageContent = React.createClass({displayName: "PortfolioPageContent
 			home: {
 				path: '/', 
 				component: React.createElement(LandingPage, null)
+			}, 
+			factSheet: {
+				path: '/facts/factsheet/', 
+				component: React.createElement(FactSheet, null)
 			}
 		};
 
@@ -36,4 +41,4 @@ var PortfolioPageContent = React.createClass({displayName: "PortfolioPageContent
 	}
 });
 
-module.exports = PortfolioPageContent;
+module.exports = NnffWebpage;
