@@ -7261,6 +7261,9 @@ h1.nnff_jumbotron_header {
     font-size: 65%;
   }
 }
+.panel_body_content p {
+  line-height: 1.5em;
+}
 #statistics_content_table {
   max-width: 80%;
   margin: 35px auto;
@@ -7272,6 +7275,7 @@ h1.nnff_jumbotron_header {
 }
 .fact_sheet_table_header {
   background-color: #dfa7a8;
+  vertical-align: text-top;
 }
 #statistics_content_caption {
   caption-side: bottom;
@@ -7280,5 +7284,21 @@ h1.nnff_jumbotron_header {
   overflow-x: auto;
 }
 #bacteria_content_header {
-  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+  margin-bottom: 20px;
+}
+.symptoms_container {
+  width: 90%;
+  margin: 25px auto;
+}
+.symptoms_header {
+  color: #c16365;
+}
+.symptoms_list li {
+  margin: 5px 0;
+}
+#panel_collapse_opportunities {
+  overflow-x: auto;
+}
+#opportunities_content_table_container {
+  margin: 25px auto;
 }
