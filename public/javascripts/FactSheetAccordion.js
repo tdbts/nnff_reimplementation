@@ -1,5 +1,8 @@
 var React = require('react'), 
-	AccordionPanel = require('./AccordionPanel');
+	AccordionPanel = require('./AccordionPanel'), 
+	AccordionBodyWhatIs = require('./AccordionBodyWhatIs'), 
+	AccordionBodyStatistics = require('./AccordionBodyStatistics'), 
+	AccordionBodyBacteria = require('./AccordionBodyBacteria');
 
 var FactSheetAccordion = React.createClass({displayName: "FactSheetAccordion",
 	getID: function (type, addition) {
@@ -17,8 +20,9 @@ var FactSheetAccordion = React.createClass({displayName: "FactSheetAccordion",
 	render: function () {
 		return (
 			React.createElement("div", {className: "panel-group", id: this.props.accordionID, role: "tablist", "aria-multiselectable": "true"}, 
-				React.createElement(AccordionPanel, {panelType: "info", headingID: this.getPanelHeadingID("1"), accordionID: this.props.accordionID, collapseID: this.getPanelCollapseID("1"), expandedByDefault: "true", headingText: "Panel Heading One", bodyContent: "This is the content for panel one."}), 
-				React.createElement(AccordionPanel, {panelType: "info", headingID: this.getPanelHeadingID("2"), accordionID: this.props.accordionID, collapseID: this.getPanelCollapseID("2"), headingText: "Panel Heading Two", bodyContent: "This is the content for panel two."})
+				React.createElement(AccordionPanel, {panelType: "info", headingID: this.getPanelHeadingID("what_is"), accordionID: this.props.accordionID, collapseID: this.getPanelCollapseID("what_is"), expandedByDefault: "true", headingText: "What is NF?", bodyContent: React.createElement(AccordionBodyWhatIs, null)}), 
+				React.createElement(AccordionPanel, {panelType: "info", headingID: this.getPanelHeadingID("statistics"), accordionID: this.props.accordionID, collapseID: this.getPanelCollapseID("statistics"), headingText: "What are the statistics of NF?", bodyContent: React.createElement(AccordionBodyStatistics, null)}), 
+				React.createElement(AccordionPanel, {panelType: "info", headingID: this.getPanelHeadingID("bacteria"), accordionID: this.props.accordionID, collapseID: this.getPanelCollapseID("bacteria"), headingText: "Bacteria that cause NF", bodyContent: React.createElement(AccordionBodyBacteria, null)})
 			)
 		);
 	}

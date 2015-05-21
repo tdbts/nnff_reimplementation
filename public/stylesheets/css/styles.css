@@ -7261,3 +7261,24 @@ h1.nnff_jumbotron_header {
     font-size: 65%;
   }
 }
+#statistics_content_table {
+  max-width: 80%;
+  margin: 35px auto;
+}
+@media (min-width: 768px) {
+  #statistics_content_table {
+    max-width: 60%;
+  }
+}
+.fact_sheet_table_header {
+  background-color: #dfa7a8;
+}
+#statistics_content_caption {
+  caption-side: bottom;
+}
+#panel_collapse_bacteria {
+  overflow-x: auto;
+}
+#bacteria_content_header {
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+}
