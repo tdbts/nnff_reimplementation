@@ -11,7 +11,7 @@ var AccordionPanelHeading = React.createClass({
 		return (
 			<div className="panel-heading" role="tab" id={this.props.headingID}>
 				<h4 className="panel-title">
-					<a data-toggle="collapse" data-parent={"#" + this.props.accordionID} href={"#" + this.props.collapseID} aria-expanded={this.props.expandedByDefault === true ? "true" : "false"} aria-controls={this.props.collapseID}>
+					<a className="panel_heading_anchor" data-toggle="collapse" data-parent={"#" + this.props.accordionID} href={"#" + this.props.collapseID} aria-expanded={this.props.expandedByDefault === true ? "true" : "false"} aria-controls={this.props.collapseID}>
 						{this.props.headingText}
 					</a>
 				</h4>

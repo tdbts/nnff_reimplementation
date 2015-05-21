@@ -4,7 +4,8 @@ var React = require('react'),
 	AccordionBodyStatistics = require('./AccordionBodyStatistics'), 
 	AccordionBodyBacteria = require('./AccordionBodyBacteria'), 
 	AccordionBodySymptoms = require('./AccordionBodySymptoms'), 
-	AccordionBodyOpportunities = require('./AccordionBodyOpportunities');
+	AccordionBodyOpportunities = require('./AccordionBodyOpportunities'), 
+	AccordionBodyHighRisk = require('./AccordionBodyHighRisk');
 
 var FactSheetAccordion = React.createClass({displayName: "FactSheetAccordion",
 	getID: function (type, addition) {
@@ -26,7 +27,8 @@ var FactSheetAccordion = React.createClass({displayName: "FactSheetAccordion",
 				React.createElement(AccordionPanel, {panelType: "info", headingID: this.getPanelHeadingID("statistics"), accordionID: this.props.accordionID, collapseID: this.getPanelCollapseID("statistics"), headingText: "What are the statistics of NF?", bodyContent: React.createElement(AccordionBodyStatistics, null)}), 
 				React.createElement(AccordionPanel, {panelType: "info", headingID: this.getPanelHeadingID("bacteria"), accordionID: this.props.accordionID, collapseID: this.getPanelCollapseID("bacteria"), headingText: "Bacteria that cause NF", bodyContent: React.createElement(AccordionBodyBacteria, null)}), 
 				React.createElement(AccordionPanel, {panelType: "info", headingID: this.getPanelHeadingID("symptoms"), accordionID: this.props.accordionID, collapseID: this.getPanelCollapseID("symptoms"), headingText: "Symptoms of NF", bodyContent: React.createElement(AccordionBodySymptoms, null)}), 
-				React.createElement(AccordionPanel, {panelType: "info", headingID: this.getPanelHeadingID("opportunities"), accordionID: this.props.accordionID, collapseID: this.getPanelCollapseID("opportunities"), headingText: "Opportunities for Infection", bodyContent: React.createElement(AccordionBodyOpportunities, null)})
+				React.createElement(AccordionPanel, {panelType: "info", headingID: this.getPanelHeadingID("opportunities"), accordionID: this.props.accordionID, collapseID: this.getPanelCollapseID("opportunities"), headingText: "Opportunities for Infection", bodyContent: React.createElement(AccordionBodyOpportunities, null)}), 
+				React.createElement(AccordionPanel, {panelType: "info", headingID: this.getPanelHeadingID("high_risk"), accordionID: this.props.accordionID, collapseID: this.getPanelCollapseID("high_risk"), headingText: "High-Risk Groups for NF", bodyContent: React.createElement(AccordionBodyHighRisk, null)})
 			)
 		);
 	}

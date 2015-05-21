@@ -7261,6 +7261,9 @@ h1.nnff_jumbotron_header {
     font-size: 65%;
   }
 }
+.panel_heading_anchor {
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+}
 .panel_body_content p {
   line-height: 1.5em;
 }
@@ -7293,7 +7296,8 @@ h1.nnff_jumbotron_header {
 .symptoms_header {
   color: #c16365;
 }
-.symptoms_list li {
+.symptoms_list li,
+ul li {
   margin: 5px 0;
 }
 #panel_collapse_opportunities {
@@ -7301,4 +7305,7 @@ h1.nnff_jumbotron_header {
 }
 #opportunities_content_table_container {
   margin: 25px auto;
+}
+#high_risk_content_list {
+  margin-top: 20px;
 }
