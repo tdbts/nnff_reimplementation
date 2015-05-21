@@ -16,14 +16,14 @@ router.get('*', function (req, res, next) {
 /* GET home page. */
 router.get('/', function(req, res) {
 	
-	res.render('index', req.viewOptions);
+	res.render('navigation', req.viewOptions);
 });
 
 router.get('/:path/*', function (req, res, next) {
 
 	setActiveTab(req);
 
-	res.render('index', req.viewOptions);
+	res.render('navigation', req.viewOptions);
 });
 
 
