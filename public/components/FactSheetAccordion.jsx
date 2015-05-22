@@ -5,7 +5,8 @@ var React = require('react'),
 	AccordionBodyBacteria = require('./AccordionBodyBacteria'), 
 	AccordionBodySymptoms = require('./AccordionBodySymptoms'), 
 	AccordionBodyOpportunities = require('./AccordionBodyOpportunities'), 
-	AccordionBodyHighRisk = require('./AccordionBodyHighRisk');
+	AccordionBodyHighRisk = require('./AccordionBodyHighRisk'), 
+	AccordionBodyDiagnosis = require('./AccordionBodyDiagnosis');
 
 var FactSheetAccordion = React.createClass({
 	getID: function (type, addition) {
@@ -29,6 +30,7 @@ var FactSheetAccordion = React.createClass({
 				<AccordionPanel panelType="info" headingID={this.getPanelHeadingID("symptoms")} accordionID={this.props.accordionID} collapseID={this.getPanelCollapseID("symptoms")} headingText="Symptoms of NF" bodyContent={<AccordionBodySymptoms />} />
 				<AccordionPanel panelType="info" headingID={this.getPanelHeadingID("opportunities")} accordionID={this.props.accordionID} collapseID={this.getPanelCollapseID("opportunities")} headingText="Opportunities for Infection" bodyContent={<AccordionBodyOpportunities />} />
 				<AccordionPanel panelType="info" headingID={this.getPanelHeadingID("high_risk")} accordionID={this.props.accordionID} collapseID={this.getPanelCollapseID("high_risk")} headingText="High&#45;Risk Groups for NF" bodyContent={<AccordionBodyHighRisk />} />
+				<AccordionPanel panelType="info" headingID={this.getPanelHeadingID("diagnosis")} accordionID={this.props.accordionID} collapseID={this.getPanelCollapseID("diagnosis")} headingText="Diagnosis of NF" bodyContent={<AccordionBodyDiagnosis />} />
 			</div>
 		);
 	}

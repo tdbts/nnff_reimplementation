@@ -7306,6 +7306,18 @@ ul li {
 #opportunities_content_table_container {
   margin: 25px auto;
 }
+#opportunities_content_table td {
+  color: #c16365;
+}
 #high_risk_content_list {
   margin-top: 20px;
+  width: 95%;
+  margin: 0 auto;
+}
+#diagnosis_content_list {
+  width: 95%;
+  margin: 0 auto;
+}
+.list-group-item:hover {
+  background-color: #f3f2f2;
 }
