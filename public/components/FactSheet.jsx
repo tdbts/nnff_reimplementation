@@ -1,6 +1,7 @@
 var React = require('react'), 
 	FactSheetHeader = require('./FactSheetHeader'), 
-	FactSheetAccordion = require('./FactSheetAccordion');
+	FactSheetAccordion = require('./FactSheetAccordion'), 
+	Footer = require('./Footer');
 
 var FactSheet = React.createClass({
 	render: function () {
@@ -10,6 +11,7 @@ var FactSheet = React.createClass({
 				<div id="fact_sheet_accordion_container" className="container">
 					<FactSheetAccordion accordionID="factSheetAccordion" />
 				</div>
+				<Footer />
 			</div>
 		);
 	}

@@ -6,7 +6,10 @@ var React = require('react'),
 	AccordionBodySymptoms = require('./AccordionBodySymptoms'), 
 	AccordionBodyOpportunities = require('./AccordionBodyOpportunities'), 
 	AccordionBodyHighRisk = require('./AccordionBodyHighRisk'), 
-	AccordionBodyDiagnosis = require('./AccordionBodyDiagnosis');
+	AccordionBodyDiagnosis = require('./AccordionBodyDiagnosis'), 
+	AccordionBodyTreatment = require('./AccordionBodyTreatment'), 
+	AccordionBodyMisdiagnosis = require('./AccordionBodyMisdiagnosis'), 
+	AccordionBodyEmerging = require('./AccordionBodyEmerging');
 
 var FactSheetAccordion = React.createClass({
 	getID: function (type, addition) {
@@ -31,23 +34,12 @@ var FactSheetAccordion = React.createClass({
 				<AccordionPanel panelType="info" headingID={this.getPanelHeadingID("opportunities")} accordionID={this.props.accordionID} collapseID={this.getPanelCollapseID("opportunities")} headingText="Opportunities for Infection" bodyContent={<AccordionBodyOpportunities />} />
 				<AccordionPanel panelType="info" headingID={this.getPanelHeadingID("high_risk")} accordionID={this.props.accordionID} collapseID={this.getPanelCollapseID("high_risk")} headingText="High&#45;Risk Groups for NF" bodyContent={<AccordionBodyHighRisk />} />
 				<AccordionPanel panelType="info" headingID={this.getPanelHeadingID("diagnosis")} accordionID={this.props.accordionID} collapseID={this.getPanelCollapseID("diagnosis")} headingText="Diagnosis of NF" bodyContent={<AccordionBodyDiagnosis />} />
+				<AccordionPanel panelType="info" headingID={this.getPanelHeadingID("treatment")} accordionID={this.props.accordionID} collapseID={this.getPanelCollapseID("treatment")} headingText="Medical Treatment of NF" bodyContent={<AccordionBodyTreatment />} />
+				<AccordionPanel panelType="info" headingID={this.getPanelHeadingID("misdiagnosis")} accordionID={this.props.accordionID} collapseID={this.getPanelCollapseID("misdiagnosis")} headingText="The Problem of Misdiagnosis" bodyContent={<AccordionBodyMisdiagnosis />} />
+				<AccordionPanel panelType="info" headingID={this.getPanelHeadingID("emerging")} accordionID={this.props.accordionID} collapseID={this.getPanelCollapseID("emerging")} headingText="Emerging Therapies" bodyContent={<AccordionBodyEmerging />} />
 			</div>
 		);
 	}
 });
 
 module.exports = FactSheetAccordion;
-
-
-/* 
-
-// PROPS: 
-- panelType 
-- headingID 
-- accordionID 
-- collapseID 
-- expandedByDefault
-- headingText 
-- bodyContent
-
-*/
