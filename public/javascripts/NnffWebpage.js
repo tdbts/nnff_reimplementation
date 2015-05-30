@@ -3,12 +3,6 @@ var React = require('react'),
 	FactSheet = require('./FactSheet');
 
 var NnffWebpage = React.createClass({displayName: "NnffWebpage",
-	getInitialState: function () {
-		return {
-			currentPageView: this.determineViewToRender()
-		};
-	}, 
-
 	determineViewToRender: function (urlPathname) {
 		var viewToRender;
 		

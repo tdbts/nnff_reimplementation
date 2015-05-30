@@ -8,6 +8,7 @@ $(document).ready(function() {
 	React.render(React.createElement(NnffWebpage, null), document.getElementById('content_wrapper'));
 
 }); 
+
 },{"./NnffWebpage":184,"react":157}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.4
@@ -28958,6 +28959,7 @@ var AccordionBodyBacteria = React.createClass({displayName: "AccordionBodyBacter
 });
 
 module.exports = AccordionBodyBacteria;
+
 },{"react":157}],159:[function(require,module,exports){
 var React = require('react');
 
@@ -28982,6 +28984,7 @@ var AccordionBodyDiagnosis = React.createClass({displayName: "AccordionBodyDiagn
 });
 
 module.exports = AccordionBodyDiagnosis;
+
 },{"react":157}],160:[function(require,module,exports){
 var React = require('react');
 
@@ -28997,6 +29000,7 @@ var AccordionBodyEmerging = React.createClass({displayName: "AccordionBodyEmergi
 });
 
 module.exports = AccordionBodyEmerging;
+
 
 },{"react":157}],161:[function(require,module,exports){
 var React = require('react');
@@ -29025,6 +29029,7 @@ var AccordionBodyHighRisk = React.createClass({displayName: "AccordionBodyHighRi
 
 module.exports = AccordionBodyHighRisk;
 
+
 },{"react":157}],162:[function(require,module,exports){
 var React = require('react');
 
@@ -29046,6 +29051,7 @@ var AccordionBodyMisdiagnosis = React.createClass({displayName: "AccordionBodyMi
 });
 
 module.exports = AccordionBodyMisdiagnosis;
+
 
 },{"react":157}],163:[function(require,module,exports){
 var React = require('react');
@@ -29115,6 +29121,7 @@ var AccordionBodyOpportunities = React.createClass({displayName: "AccordionBodyO
 
 module.exports = AccordionBodyOpportunities;
 
+
 },{"react":157}],164:[function(require,module,exports){
 var React = require('react');
 
@@ -29163,6 +29170,7 @@ var AccordionBodyStatistics = React.createClass({displayName: "AccordionBodyStat
 
 module.exports = AccordionBodyStatistics;
 
+
 },{"react":157}],165:[function(require,module,exports){
 var React = require('react');
 
@@ -29202,6 +29210,7 @@ var AccordionBodySymptoms = React.createClass({displayName: "AccordionBodySympto
 
 module.exports = AccordionBodySymptoms;
 
+
 },{"react":157}],166:[function(require,module,exports){
 var React = require('react');
 
@@ -29232,6 +29241,7 @@ var AccordionBodyTreatment = React.createClass({displayName: "AccordionBodyTreat
 
 module.exports = AccordionBodyTreatment;
 
+
 },{"react":157}],167:[function(require,module,exports){
 var React = require('react');
 
@@ -29248,6 +29258,7 @@ var AccordionBodyWhatIs = React.createClass({displayName: "AccordionBodyWhatIs",
 });
 
 module.exports = AccordionBodyWhatIs;
+
 
 },{"react":157}],168:[function(require,module,exports){
 var React = require('react'), 
@@ -29286,6 +29297,7 @@ module.exports = AccordionPanel;
 
 */
 
+
 },{"./AccordionPanelBody":169,"./AccordionPanelHeading":170,"react":157}],169:[function(require,module,exports){
 var React = require('react');
 
@@ -29308,6 +29320,7 @@ var AccordionPanelBody = React.createClass({displayName: "AccordionPanelBody",
 });
 
 module.exports = AccordionPanelBody;
+
 
 },{"react":157}],170:[function(require,module,exports){
 var React = require('react');
@@ -29334,6 +29347,7 @@ var AccordionPanelHeading = React.createClass({displayName: "AccordionPanelHeadi
 
 module.exports = AccordionPanelHeading;
 
+
 },{"react":157}],171:[function(require,module,exports){
 var React = require('react');
 
@@ -29349,6 +29363,7 @@ var Blockquote = React.createClass({displayName: "Blockquote",
 });
 
 module.exports = Blockquote;
+
 
 },{"react":157}],172:[function(require,module,exports){
 var React = require('react'), 
@@ -29390,6 +29405,7 @@ var BookSecondEditionPanel = React.createClass({displayName: "BookSecondEditionP
 });
 
 module.exports = BookSecondEditionPanel;
+
 
 },{"./Blockquote":171,"./Panel":185,"react":157}],173:[function(require,module,exports){
 var React = require('react'), 
@@ -29445,6 +29461,7 @@ var CommonNameBanner = React.createClass({displayName: "CommonNameBanner",
 
 module.exports = CommonNameBanner;
 
+
 },{"jquery":2,"react":157}],174:[function(require,module,exports){
 var React = require('react');
 
@@ -29476,6 +29493,7 @@ var DrCrewThumbnail = React.createClass({displayName: "DrCrewThumbnail",
 });
 
 module.exports = DrCrewThumbnail;
+
 },{"react":157}],175:[function(require,module,exports){
 var React = require('react'), 
 	Panel = require('./Panel'), 
@@ -29507,6 +29525,7 @@ var EmergingTreatmentPanel = React.createClass({displayName: "EmergingTreatmentP
 
 module.exports = EmergingTreatmentPanel;
 		
+
 },{"./DrCrewThumbnail":174,"./Panel":185,"react":157}],176:[function(require,module,exports){
 var React = require('react'), 
 	FactSheetHeader = require('./FactSheetHeader'), 
@@ -29528,6 +29547,7 @@ var FactSheet = React.createClass({displayName: "FactSheet",
 });
 
 module.exports = FactSheet;
+
 
 },{"./FactSheetAccordion":177,"./FactSheetHeader":178,"./Footer":180,"react":157}],177:[function(require,module,exports){
 var React = require('react'), 
@@ -29576,6 +29596,7 @@ var FactSheetAccordion = React.createClass({displayName: "FactSheetAccordion",
 
 module.exports = FactSheetAccordion;
 
+
 },{"./AccordionBodyBacteria":158,"./AccordionBodyDiagnosis":159,"./AccordionBodyEmerging":160,"./AccordionBodyHighRisk":161,"./AccordionBodyMisdiagnosis":162,"./AccordionBodyOpportunities":163,"./AccordionBodyStatistics":164,"./AccordionBodySymptoms":165,"./AccordionBodyTreatment":166,"./AccordionBodyWhatIs":167,"./AccordionPanel":168,"react":157}],178:[function(require,module,exports){
 var React = require('react');
 
@@ -29594,6 +29615,7 @@ var FactSheetHeader = React.createClass({displayName: "FactSheetHeader",
 });
 
 module.exports = FactSheetHeader;
+
 
 },{"react":157}],179:[function(require,module,exports){
 var React = require('react'), 
@@ -29619,6 +29641,7 @@ var FeaturedArticles = React.createClass({displayName: "FeaturedArticles",
 
 module.exports = FeaturedArticles;
 	
+
 },{"./BookSecondEditionPanel":172,"./EmergingTreatmentPanel":175,"react":157}],180:[function(require,module,exports){
 var React = require('react');
 
@@ -29652,6 +29675,7 @@ var Footer = React.createClass({displayName: "Footer",
 
 module.exports = Footer;
 
+
 },{"react":157}],181:[function(require,module,exports){
 var React = require('react'), 
 	NNFFJumbotron = require('./NNFFJumbotron'), 
@@ -29677,6 +29701,7 @@ var LandingPage = React.createClass({displayName: "LandingPage",
 });
 
 module.exports = LandingPage;
+
 
 },{"./CommonNameBanner":173,"./FeaturedArticles":179,"./Footer":180,"./MailingListInvitation":182,"./NNFFJumbotron":183,"./WelcomeRow":187,"react":157}],182:[function(require,module,exports){
 var React = require('react');
@@ -29705,6 +29730,7 @@ var MailingListInvitation = React.createClass({displayName: "MailingListInvitati
 });
 
 module.exports = MailingListInvitation;
+
 
 },{"react":157}],183:[function(require,module,exports){
 var React = require('react'), 
@@ -29810,18 +29836,13 @@ var NNFFJumbotron = React.createClass({displayName: "NNFFJumbotron",
 
 module.exports = NNFFJumbotron;
 
+
 },{"jquery":2,"react":157}],184:[function(require,module,exports){
 var React = require('react'), 
 	LandingPage = require('./LandingPage'), 
 	FactSheet = require('./FactSheet');
 
 var NnffWebpage = React.createClass({displayName: "NnffWebpage",
-	getInitialState: function () {
-		return {
-			currentPageView: this.determineViewToRender()
-		};
-	}, 
-
 	determineViewToRender: function (urlPathname) {
 		var viewToRender;
 		
@@ -29857,6 +29878,7 @@ var NnffWebpage = React.createClass({displayName: "NnffWebpage",
 });
 
 module.exports = NnffWebpage;
+
 },{"./FactSheet":176,"./LandingPage":181,"react":157}],185:[function(require,module,exports){
 var React = require('react');
 
@@ -29885,6 +29907,7 @@ var Panel = React.createClass({displayName: "Panel",
 
 module.exports = Panel;
 
+
 },{"react":157}],186:[function(require,module,exports){
 var React = require('react');
 
@@ -29907,6 +29930,7 @@ var TextColumn = React.createClass({displayName: "TextColumn",
 });
 
 module.exports = TextColumn;
+
 
 },{"react":157}],187:[function(require,module,exports){
 var React = require('react'), 
@@ -29977,6 +30001,7 @@ var WelcomeRow = React.createClass({displayName: "WelcomeRow",
 });
 
 module.exports = WelcomeRow;
+
 
 },{"./TextColumn":186,"react":157}],188:[function(require,module,exports){
 // shim for using process in browser
