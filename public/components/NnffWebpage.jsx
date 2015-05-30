@@ -9,7 +9,7 @@ var NnffWebpage = React.createClass({
 		};
 	}, 
 
-	determineViewToRender: function () {
+	determineViewToRender: function (urlPathname) {
 		var viewToRender;
 		
 		var views = {
@@ -24,7 +24,7 @@ var NnffWebpage = React.createClass({
 		};
 
 		for (var view in views) {
-			if (window.location.pathname === views[view].path) {
+			if (urlPathname === views[view].path) {
 				viewToRender = views[view].component;
 			}		
 		}
@@ -33,9 +33,11 @@ var NnffWebpage = React.createClass({
 	}, 
 
 	render: function () {
+		var currentView = this.determineViewToRender(window.location.pathname);
+
 		return (
-			<div id="#page_component_anchor" className="fullHeightWidth">
-				{this.state.currentPageView}
+			<div id="page_component_anchor" className="fullHeightWidth">
+				{currentView}
 			</div>
 		);
 	}

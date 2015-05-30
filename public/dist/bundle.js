@@ -29822,7 +29822,7 @@ var NnffWebpage = React.createClass({displayName: "NnffWebpage",
 		};
 	}, 
 
-	determineViewToRender: function () {
+	determineViewToRender: function (urlPathname) {
 		var viewToRender;
 		
 		var views = {
@@ -29837,7 +29837,7 @@ var NnffWebpage = React.createClass({displayName: "NnffWebpage",
 		};
 
 		for (var view in views) {
-			if (window.location.pathname === views[view].path) {
+			if (urlPathname === views[view].path) {
 				viewToRender = views[view].component;
 			}		
 		}
@@ -29846,9 +29846,11 @@ var NnffWebpage = React.createClass({displayName: "NnffWebpage",
 	}, 
 
 	render: function () {
+		var currentView = this.determineViewToRender(window.location.pathname);
+
 		return (
-			React.createElement("div", {id: "#page_component_anchor", className: "fullHeightWidth"}, 
-				this.state.currentPageView
+			React.createElement("div", {id: "page_component_anchor", className: "fullHeightWidth"}, 
+				currentView
 			)
 		);
 	}
