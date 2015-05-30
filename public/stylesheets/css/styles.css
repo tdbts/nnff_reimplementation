@@ -7207,21 +7207,21 @@ h1.nnff_jumbotron_header {
 #twitter_icon span {
   color: #9fa9c0;
 }
-#faqs_jumbotron {
+.header_jumbotron {
   background: url(../../images/abstract_lights_at_night_dark.jpg) no-repeat center center;
   height: 150px;
 }
 @media (min-width: 768px) {
-  #faqs_jumbotron {
+  .header_jumbotron {
     height: 200px;
   }
 }
-#faqs_header {
+.header {
   font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
   color: #e8e6e6;
   width: 90%;
 }
-#faqs_header_text {
+.header_text {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
@@ -7230,18 +7230,18 @@ h1.nnff_jumbotron_header {
   margin-bottom: 10px;
   font-size: 24px;
 }
-#faqs_header_text small,
-#faqs_header_text .small {
+.header_text small,
+.header_text .small {
   font-weight: normal;
   line-height: 1;
   color: #777777;
 }
-#faqs_header_text small,
-#faqs_header_text .small {
+.header_text small,
+.header_text .small {
   font-size: 65%;
 }
 @media (min-width: 768px) {
-  #faqs_header_text {
+  .header_text {
     font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
@@ -7250,14 +7250,14 @@ h1.nnff_jumbotron_header {
     margin-bottom: 10px;
     font-size: 36px;
   }
-  #faqs_header_text small,
-  #faqs_header_text .small {
+  .header_text small,
+  .header_text .small {
     font-weight: normal;
     line-height: 1;
     color: #777777;
   }
-  #faqs_header_text small,
-  #faqs_header_text .small {
+  .header_text small,
+  .header_text .small {
     font-size: 65%;
   }
 }

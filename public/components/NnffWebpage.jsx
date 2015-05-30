@@ -1,6 +1,7 @@
 var React = require('react'), 
 	LandingPage = require('./LandingPage'), 
-	FactSheet = require('./FactSheet');
+	FactSheet = require('./FactSheet'), 
+	ForProfessionals = require('./ForProfessionals');
 
 var NnffWebpage = React.createClass({
 	determineViewToRender: function (urlPathname) {
@@ -14,6 +15,10 @@ var NnffWebpage = React.createClass({
 			factSheet: {
 				path: '/facts/factsheet/', 
 				component: <FactSheet />
+			}, 
+			forProfessionals: {
+				path: '/facts/professionals/', 
+				component: <ForProfessionals />
 			}
 		};
 
