@@ -7340,9 +7340,13 @@ ul li {
 #for_professionals_table {
   overflow-x: scroll;
   margin-top: 25px;
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
 }
 .article_title {
-  font-style: italic;
+  font-weight: bold;
+}
+.external_link_icon {
+  font-size: 1.5em;
 }
 #about_us_content_container {
   font-family: Copperplate, 'Copperplate Gothic Light', fantasy;

@@ -30129,37 +30129,37 @@ var ForProfessionalsTable = React.createClass({displayName: "ForProfessionalsTab
 							React.createElement("td", null, "July 15, 2014"), 
 							React.createElement("td", null, "Clinical Infectious Diseases"), 
 							React.createElement("td", {className: "article_title"}, "Necrotizing Soft-Tissue Infection: Diagnosis and Management"), 
-							React.createElement("td", null, React.createElement("a", {href: "http://cid.oxfordjournals.org/content/44/5/705.long"}, React.createElement("span", {className: "fa fa-external-link"})))
+							React.createElement("td", null, React.createElement("a", {href: "http://cid.oxfordjournals.org/content/44/5/705.long"}, React.createElement("span", {className: "fa fa-external-link external_link_icon"})))
 						), 
 						React.createElement("tr", null, 
 							React.createElement("td", null, "June 20, 2014"), 
 							React.createElement("td", null, "Forbes"), 
 							React.createElement("td", {className: "article_title"}, "Antibiotic Pipeline Revival: FDA Approves Cubist Pharmaceuticals' Sivextro For MRSA, Other Serious Skin Infections"), 
-							React.createElement("td", null, React.createElement("a", {href: "http://www.forbes.com/sites/davidkroll/2014/06/20/antibiotic-pipeline-revival-fda-approves-cubist-pharmaceuticals-sivextro-for-mrsa-other-serious-skin-infections/"}, React.createElement("span", {className: "fa fa-external-link"})))
+							React.createElement("td", null, React.createElement("a", {href: "http://www.forbes.com/sites/davidkroll/2014/06/20/antibiotic-pipeline-revival-fda-approves-cubist-pharmaceuticals-sivextro-for-mrsa-other-serious-skin-infections/"}, React.createElement("span", {className: "fa fa-external-link external_link_icon"})))
 						), 
 						React.createElement("tr", null, 
 							React.createElement("td", null, "June 5, 2014"), 
 							React.createElement("td", null, "NEJM"), 
 							React.createElement("td", {className: "article_title"}, "Single-Dose Oritavancin in the Treatment of Acute Bacterial Skin Infections"), 
-							React.createElement("td", null, React.createElement("a", {href: "http://www.nejm.org/doi/full/10.1056/NEJMoa1310422"}, React.createElement("span", {className: "fa fa-external-link"})))
+							React.createElement("td", null, React.createElement("a", {href: "http://www.nejm.org/doi/full/10.1056/NEJMoa1310422"}, React.createElement("span", {className: "fa fa-external-link external_link_icon"})))
 						), 
 						React.createElement("tr", null, 
 							React.createElement("td", null, "March 27, 2014"), 
 							React.createElement("td", null, "NEJM"), 
 							React.createElement("td", {className: "article_title"}, "Case 10-2014 – A 45-Year-Old Man with a Rash"), 
-							React.createElement("td", null, React.createElement("a", {href: "http://www.nejm.org/doi/full/10.1056/NEJMcpc1304162"}, React.createElement("span", {className: "fa fa-external-link"})))
+							React.createElement("td", null, React.createElement("a", {href: "http://www.nejm.org/doi/full/10.1056/NEJMcpc1304162"}, React.createElement("span", {className: "fa fa-external-link external_link_icon"})))
 						), 
 						React.createElement("tr", null, 
 							React.createElement("td", null, "January 22, 2014"), 
 							React.createElement("td", null, "ISRN Infectious Diseases"), 
 							React.createElement("td", {className: "article_title"}, "Necrotizing Fasciitis: Diagnostic Challenges and Current Practices"), 
-							React.createElement("td", null, React.createElement("a", {href: "http://www.hindawi.com/journals/isrn.infectious.diseases/2014/208072/"}, React.createElement("span", {className: "fa fa-external-link"})))
+							React.createElement("td", null, React.createElement("a", {href: "http://www.hindawi.com/journals/isrn.infectious.diseases/2014/208072/"}, React.createElement("span", {className: "fa fa-external-link external_link_icon"})))
 						), 
 						React.createElement("tr", null, 
 							React.createElement("td", null, "November, 2012"), 
 							React.createElement("td", null, "Journal of Surgical Case Reports"), 
 							React.createElement("td", {className: "article_title"}, "A presentation of facial necrotizing fasciitis with orbital involvement"), 
-							React.createElement("td", null, React.createElement("a", {href: "http://jscr.oxfordjournals.org/content/2013/1/rjs033.full"}, React.createElement("span", {className: "fa fa-external-link"})))
+							React.createElement("td", null, React.createElement("a", {href: "http://jscr.oxfordjournals.org/content/2013/1/rjs033.full"}, React.createElement("span", {className: "fa fa-external-link external_link_icon"})))
 						)
 					)
 				)
