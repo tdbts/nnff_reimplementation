@@ -5,7 +5,7 @@ var ForProfessionalsTable = React.createClass({
 		return (
 			<div id="for_professionals_table_container" className="container">	
 				<table id="for_professionals_table" className="table table-striped table-bordered table-hover">
-					<thead>
+					<thead className="nnff_table_head">
 						<tr>
 							<th>Date</th>
 							<th>Venue</th>

@@ -7,7 +7,7 @@ var AccordionBodyStatistics = React.createClass({
 				<p>Statistics regarding the incidence of NF in the United States are tough to determine. The main reason for this is that while the CDC tracks cases of NF caused by group A streptococcus (GAS), it does NOT track cases of NF caused by the handful of other bacteria that also cause NF.</p>			
 				<p>It is generally agreed by experts that <strong>there are between 1 and 5 cases of NF caused by group A strep per 100,000 people per year</strong>, however, this number seems to be increasing for reasons as yet unknown. Using this estimate &#8212; just for NF cases caused by group A strep, we can see the staggering numbers (below). Combine this with the as yet unquantifiable numbers of people who contract NF from other forms of bacteria, the statistics are frightening.</p>
 				<table id="statistics_content_table" className="table table-striped table-bordered">
-					<thead>
+					<thead className="nnff_table_head">
 						<tr>
 							<th className="fact_sheet_table_header"># of Cases Per 100,000 People</th>
 							<th className="fact_sheet_table_header"># of Cases Caused by Group A Strep Per Year</th>

@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 }); 
 
-},{"./NnffWebpage":198,"react":158}],2:[function(require,module,exports){
+},{"./NnffWebpage":200,"react":158}],2:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -28997,6 +28997,8 @@ var React = require('react'),
 	AboutUsDesktopContent = require('./AboutUsDesktopContent'), 
 	AboutUsTabletContent = require('./AboutUsTabletContent'), 
 	AboutUsPhoneContent = require('./AboutUsPhoneContent'), 
+	AboutUsTable = require('./AboutUsTable'),
+	AboutUsOutreach = require('./AboutUsOutreach'),  
 	Footer = require('./Footer');
 
 var AboutUs = React.createClass({displayName: "AboutUs",
@@ -29007,7 +29009,9 @@ var AboutUs = React.createClass({displayName: "AboutUs",
 				React.createElement("div", {id: "about_us_content_container", className: "container"}, 
 					React.createElement(AboutUsDesktopContent, null), 
 					React.createElement(AboutUsTabletContent, null), 
-					React.createElement(AboutUsPhoneContent, null)
+					React.createElement(AboutUsPhoneContent, null), 
+					React.createElement(AboutUsTable, null), 
+					React.createElement(AboutUsOutreach, null)
 				), 
 				React.createElement(Footer, null)
 			)
@@ -29017,7 +29021,7 @@ var AboutUs = React.createClass({displayName: "AboutUs",
 
 module.exports = AboutUs;
 
-},{"./AboutUsDesktopContent":160,"./AboutUsPhoneContent":163,"./AboutUsTabletContent":164,"./Footer":188,"./NNFFHeader":196,"react":158}],160:[function(require,module,exports){
+},{"./AboutUsDesktopContent":160,"./AboutUsOutreach":163,"./AboutUsPhoneContent":164,"./AboutUsTable":165,"./AboutUsTabletContent":166,"./Footer":190,"./NNFFHeader":198,"react":158}],160:[function(require,module,exports){
 var React = require('react'), 
 	NNFFFounderThumbnailsHeader = require('./NNFFFounderThumbnailsHeader'), 
 	NNFFFounderThumbnail = require('./NNFFFounderThumbnail'), 
@@ -29048,7 +29052,7 @@ var AboutUsDesktopContent = React.createClass({displayName: "AboutUsDesktopConte
 
 module.exports = AboutUsDesktopContent;
 
-},{"./AboutUsMission":161,"./AboutUsNews":162,"./AboutUsWelcome":165,"./NNFFFounderThumbnail":194,"./NNFFFounderThumbnailsHeader":195,"react":158}],161:[function(require,module,exports){
+},{"./AboutUsMission":161,"./AboutUsNews":162,"./AboutUsWelcome":167,"./NNFFFounderThumbnail":196,"./NNFFFounderThumbnailsHeader":197,"react":158}],161:[function(require,module,exports){
 var React = require('react');
 
 var AboutUsMission = React.createClass({displayName: "AboutUsMission",
@@ -29088,6 +29092,23 @@ var AboutUsNews = React.createClass({displayName: "AboutUsNews",
 module.exports = AboutUsNews;
 
 },{"react":158}],163:[function(require,module,exports){
+var React = require('react');
+
+var AboutUsOutreach = React.createClass({displayName: "AboutUsOutreach",
+	render: function () {
+		return (
+			React.createElement("div", {id: "about_us_outreach_container", className: "about_us_section"}, 
+				React.createElement("h3", {className: "section_header"}, "Outreach & Education"), 
+				React.createElement("p", null, "Probably the most critically important mission of NNFF is outreach and education — for both the general public and medical professionals. Recognition of early symptoms is the key to saving limbs and lives. Guest speaking is one way we are fulfilling this mission."), 
+				React.createElement("p", null, "Please ", React.createElement("a", {href: "#"}, "contact us"), " if you would like Jacqueline Roemmele to speak to your local community regarding NF.")
+			)			
+		);
+	}
+});
+
+module.exports = AboutUsOutreach;
+
+},{"react":158}],164:[function(require,module,exports){
 var React = require('react'), 
 	NNFFFounderThumbnailsHeader = require('./NNFFFounderThumbnailsHeader'), 
 	NNFFFounderThumbnail = require('./NNFFFounderThumbnail'), 
@@ -29118,7 +29139,147 @@ var AboutUsPhoneContent = React.createClass({displayName: "AboutUsPhoneContent",
 
 module.exports = AboutUsPhoneContent;
 
-},{"./AboutUsMission":161,"./AboutUsNews":162,"./AboutUsWelcome":165,"./NNFFFounderThumbnail":194,"./NNFFFounderThumbnailsHeader":195,"react":158}],164:[function(require,module,exports){
+},{"./AboutUsMission":161,"./AboutUsNews":162,"./AboutUsWelcome":167,"./NNFFFounderThumbnail":196,"./NNFFFounderThumbnailsHeader":197,"react":158}],165:[function(require,module,exports){
+var React = require('react');
+
+var AboutUsTable = React.createClass({displayName: "AboutUsTable",
+	render: function () {
+		return (
+			React.createElement("div", {id: "about_us_table_container", className: "about_us_section"}, 
+				React.createElement("table", {id: "about_us_table", className: "table table-striped table-bordered table-hover"}, 
+					React.createElement("thead", {className: "nnff_table_head"}, 
+						React.createElement("tr", null, 
+							React.createElement("th", null, "Date"), 
+							React.createElement("th", null, "Venue"), 
+							React.createElement("th", null, "Title"), 
+							React.createElement("th", null, "Link")
+						)
+					), 
+					React.createElement("tbody", null, 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "March 17, 2015"), 
+							React.createElement("td", null, "CNN Money, CNBC"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "The National Necrotizing Fasciitis Foundation Names NovaBay's NeutroPhase as its Official \"Flesh Eating Disease\" Wound Cleanser")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://money.cnn.com/news/newsfeeds/articles/prnewswire/SF55269.htm"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "September 15, 2014"), 
+							React.createElement("td", null, "PR News Wire"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "Hispanic Heroes Honored in Fight Against \"Flesh-Eating\" Disease")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://www.prnewswire.com/news-releases/hispanic-heroes-honored-in-fight-against-flesh-eating-disease-275148501.html"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "August 20, 2014"), 
+							React.createElement("td", null, "Desert Sun"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "Eisenhower doctor successfully treats flesh-eating disease")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://www.desertsun.com/story/news/health/2014/08/19/eisenhower-doctor-finds-cure-flesh-eating-disease/14314381/"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "August 12, 2014"), 
+							React.createElement("td", null, "Infection Control Today"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "National Necrotizing Fasciitis Foundation Warns About Vibrio Infections")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://www.infectioncontroltoday.com/news/2014/08/national-necrotizing-fasciitis-foundation-warns-about-vibrio-infections.aspx"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "July 2, 2014"), 
+							React.createElement("td", null, "Stockhouse"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "British Prime Minister David Cameron Warns of Growing Crisis of Antibiotic-Resistant Bacteria, But Wound Care Expert Dr. John Crew Points to Possible Solution")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://www.stockhouse.com/news/press-releases/2014/07/02/british-prime-minister-david-cameron-warns-of-growing-crisis-of-antibiotic#5vsYwWzUOX7zgi7x.99"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "July 2, 2014"), 
+							React.createElement("td", null, "Bangor Daily News"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "'Flesh-eating' infection claims 2 Maine lives in 6 months, advocacy group calls treatment 'tragically inadequate'")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://bangordailynews.com/2014/07/02/health/flesh-eating-infection-claims-2-maine-lives-in-6-months-advocacy-group-calls-treatment-tragically-inadequate/"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "June 25, 2014"), 
+							React.createElement("td", null, "MarketWatch"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "The National Necrotizing Fasciitis Foundation Says Current Standard of Care for Flesh-eating Bacteria is \"Tragically Inadequate\"")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://www.marketwatch.com/story/the-national-necrotizing-fasciitis-foundation-says-current-standard-of-care-for-flesh-eating-bacteria-is-tragically-inadequate-2014-06-25"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "May 19, 2014"), 
+							React.createElement("td", null, "Many venues"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "The National Necrotizing Fasciitis Foundation Launches Referral Initiative to Provide New Life-Saving Treatment to Victims of \"Flesh-eating\" Disease")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://www.marketwatch.com/story/the-national-necrotizing-fasciitis-foundation-launches-referral-initiative-to-provide-new-life-saving-treatment-to-victims-of-flesh-eating-disease-2014-05-19"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "November 20, 2013"), 
+							React.createElement("td", null, "Medical News"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "NeutroPhase irrigation therapy and NPWT help treat severe flesh eating and wound infections")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://nnff.org/newsite/NeutroPhase%20irrigation%20therapy%20and%20NPWT%20help%20treat%20severe%20flesh%20eating%20and%20wound%20infections"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "April 16, 2014"), 
+							React.createElement("td", null, "National Geographic"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "How Harmless Bacteria Quickly Turned Into a Flesh-Eating Monster")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://news.nationalgeographic.com/news/2014/04/140415-flesh-eating-bacteria-genetics-science/"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "October 25, 2012"), 
+							React.createElement("td", null, "Souderton Independent (PA)"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "Flesh-eating bacteria leads to amputation for Lower Salford man")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://www.montgomerynews.com/articles/2012/10/25/souderton_independent/news/doc5089317bc6c17973539815.txt"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "July 23, 2012"), 
+							React.createElement("td", null, "Nurse Magazine"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "Necrotizing fasciitis poses extra challenges for patients, healthcare practitioners")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://news.nurse.com/article/20120723/NY02/307230038"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "May 24, 2012"), 
+							React.createElement("td", null, "US News & World Report"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "There's No Flesh-Eating Bacteria Epidemic, Experts Say")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://www.usnews.com/news/articles/2012/05/24/theres-no-flesh-eating-bacteria-epidemic-experts-say"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "May 22, 2012"), 
+							React.createElement("td", null, "NBC News"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "Flesh-eating Bacteria Explained")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://www.msnbc.msn.com/id/47511589/ns/technology_and_science-science/t/flesh-eating-bacteria-explained/#.UKAzSoapNX0"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "May 18, 2012"), 
+							React.createElement("td", null, "CNN"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "Advocate: Story of rare bacterial infection raising awareness")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://www.cnn.com/2012/05/17/health/flesh-eating-diagnosis/index.html"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "May 17, 2012"), 
+							React.createElement("td", null, "ABC News"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "Flesh-eating Disease: Severe pain leads symptoms")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://abcnews.go.com/Health/Wellness/flesh-eating-disease-survivors-recount-ordeals/story?id=16367870#.UKAvzIapNX0"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "May 15, 2010"), 
+							React.createElement("td", null, "Discovery Health"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "How Flesh-Eating Bacteria Works")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://health.howstuffworks.com/skin-care/problems/medical/flesh-eating-bacteria4.htm"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "April 24, 2012"), 
+							React.createElement("td", null, "M Live"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "Flesh-Eating Bacteria Survivor Donna Batdorff")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://photos.mlive.com/grandrapidspress/2012/04/flesh_eating_bacteria_survivor_1.html"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "April 28, 2009"), 
+							React.createElement("td", null, "Oprah Winfrey Show"), 
+							React.createElement("td", {className: "about_us_table_title"}, React.createElement("strong", null, "Dr. Oz: Deadly Superbug and Flesh-Eating Bacteria")), 
+							React.createElement("td", null, React.createElement("a", {href: "http://www.oprah.com/health/Dr-Ozs-Warning-About-MRSA-and-Deadly-Bacteria/12"}, React.createElement("span", {className: "fa fa-external-link about_us_table_link_icon"})))
+						)
+					)
+				)
+			)			
+		);
+	}
+});
+
+module.exports = AboutUsTable;
+
+},{"react":158}],166:[function(require,module,exports){
 var React = require('react'), 
 	NNFFFounderThumbnailsHeader = require('./NNFFFounderThumbnailsHeader'), 
 	NNFFFounderThumbnail = require('./NNFFFounderThumbnail'), 
@@ -29149,7 +29310,7 @@ var AboutUsTabletContent = React.createClass({displayName: "AboutUsTabletContent
 
 module.exports = AboutUsTabletContent;
 
-},{"./AboutUsMission":161,"./AboutUsNews":162,"./AboutUsWelcome":165,"./NNFFFounderThumbnail":194,"./NNFFFounderThumbnailsHeader":195,"react":158}],165:[function(require,module,exports){
+},{"./AboutUsMission":161,"./AboutUsNews":162,"./AboutUsWelcome":167,"./NNFFFounderThumbnail":196,"./NNFFFounderThumbnailsHeader":197,"react":158}],167:[function(require,module,exports){
 var React = require('react');
 
 var AboutUsWelcome = React.createClass({displayName: "AboutUsWelcome",
@@ -29167,7 +29328,7 @@ var AboutUsWelcome = React.createClass({displayName: "AboutUsWelcome",
 
 module.exports = AboutUsWelcome;
 
-},{"react":158}],166:[function(require,module,exports){
+},{"react":158}],168:[function(require,module,exports){
 var React = require('react');
 
 var AccordionBodyBacteria = React.createClass({displayName: "AccordionBodyBacteria",
@@ -29176,7 +29337,7 @@ var AccordionBodyBacteria = React.createClass({displayName: "AccordionBodyBacter
 			React.createElement("div", {id: "bacteria_content", className: "panel_body_content"}, 
 				React.createElement("h5", {id: "bacteria_content_header"}, "The bacteria that cause NF include:"), 
 				React.createElement("table", {id: "bacteria_content_table", className: "table table-striped table-bordered"}, 
-					React.createElement("thead", null, 
+					React.createElement("thead", {className: "nnff_table_head"}, 
 						React.createElement("tr", null, 
 							React.createElement("th", {className: "fact_sheet_table_header"}, "Name"), 
 							React.createElement("th", {className: "fact_sheet_table_header"}, "Where Found?"), 
@@ -29228,7 +29389,7 @@ var AccordionBodyBacteria = React.createClass({displayName: "AccordionBodyBacter
 
 module.exports = AccordionBodyBacteria;
 
-},{"react":158}],167:[function(require,module,exports){
+},{"react":158}],169:[function(require,module,exports){
 var React = require('react');
 
 var AccordionBodyDiagnosis = React.createClass({displayName: "AccordionBodyDiagnosis",
@@ -29253,7 +29414,7 @@ var AccordionBodyDiagnosis = React.createClass({displayName: "AccordionBodyDiagn
 
 module.exports = AccordionBodyDiagnosis;
 
-},{"react":158}],168:[function(require,module,exports){
+},{"react":158}],170:[function(require,module,exports){
 var React = require('react');
 
 var AccordionBodyEmerging = React.createClass({displayName: "AccordionBodyEmerging",
@@ -29269,7 +29430,7 @@ var AccordionBodyEmerging = React.createClass({displayName: "AccordionBodyEmergi
 
 module.exports = AccordionBodyEmerging;
 
-},{"react":158}],169:[function(require,module,exports){
+},{"react":158}],171:[function(require,module,exports){
 var React = require('react');
 
 var AccordionBodyHighRisk = React.createClass({displayName: "AccordionBodyHighRisk",
@@ -29296,7 +29457,7 @@ var AccordionBodyHighRisk = React.createClass({displayName: "AccordionBodyHighRi
 
 module.exports = AccordionBodyHighRisk;
 
-},{"react":158}],170:[function(require,module,exports){
+},{"react":158}],172:[function(require,module,exports){
 var React = require('react');
 
 var AccordionBodyMisdiagnosis = React.createClass({displayName: "AccordionBodyMisdiagnosis",
@@ -29318,7 +29479,7 @@ var AccordionBodyMisdiagnosis = React.createClass({displayName: "AccordionBodyMi
 
 module.exports = AccordionBodyMisdiagnosis;
 
-},{"react":158}],171:[function(require,module,exports){
+},{"react":158}],173:[function(require,module,exports){
 var React = require('react');
 
 var AccordionBodyOpportunities = React.createClass({displayName: "AccordionBodyOpportunities",
@@ -29386,7 +29547,7 @@ var AccordionBodyOpportunities = React.createClass({displayName: "AccordionBodyO
 
 module.exports = AccordionBodyOpportunities;
 
-},{"react":158}],172:[function(require,module,exports){
+},{"react":158}],174:[function(require,module,exports){
 var React = require('react');
 
 var AccordionBodyStatistics = React.createClass({displayName: "AccordionBodyStatistics",
@@ -29396,7 +29557,7 @@ var AccordionBodyStatistics = React.createClass({displayName: "AccordionBodyStat
 				React.createElement("p", null, "Statistics regarding the incidence of NF in the United States are tough to determine. The main reason for this is that while the CDC tracks cases of NF caused by group A streptococcus (GAS), it does NOT track cases of NF caused by the handful of other bacteria that also cause NF."), 			
 				React.createElement("p", null, "It is generally agreed by experts that ", React.createElement("strong", null, "there are between 1 and 5 cases of NF caused by group A strep per 100,000 people per year"), ", however, this number seems to be increasing for reasons as yet unknown. Using this estimate — just for NF cases caused by group A strep, we can see the staggering numbers (below). Combine this with the as yet unquantifiable numbers of people who contract NF from other forms of bacteria, the statistics are frightening."), 
 				React.createElement("table", {id: "statistics_content_table", className: "table table-striped table-bordered"}, 
-					React.createElement("thead", null, 
+					React.createElement("thead", {className: "nnff_table_head"}, 
 						React.createElement("tr", null, 
 							React.createElement("th", {className: "fact_sheet_table_header"}, "# of Cases Per 100,000 People"), 
 							React.createElement("th", {className: "fact_sheet_table_header"}, "# of Cases Caused by Group A Strep Per Year")
@@ -29434,7 +29595,7 @@ var AccordionBodyStatistics = React.createClass({displayName: "AccordionBodyStat
 
 module.exports = AccordionBodyStatistics;
 
-},{"react":158}],173:[function(require,module,exports){
+},{"react":158}],175:[function(require,module,exports){
 var React = require('react');
 
 var AccordionBodySymptoms = React.createClass({displayName: "AccordionBodySymptoms",
@@ -29473,7 +29634,7 @@ var AccordionBodySymptoms = React.createClass({displayName: "AccordionBodySympto
 
 module.exports = AccordionBodySymptoms;
 
-},{"react":158}],174:[function(require,module,exports){
+},{"react":158}],176:[function(require,module,exports){
 var React = require('react');
 
 var AccordionBodyTreatment = React.createClass({displayName: "AccordionBodyTreatment",
@@ -29503,7 +29664,7 @@ var AccordionBodyTreatment = React.createClass({displayName: "AccordionBodyTreat
 
 module.exports = AccordionBodyTreatment;
 
-},{"react":158}],175:[function(require,module,exports){
+},{"react":158}],177:[function(require,module,exports){
 var React = require('react');
 
 var AccordionBodyWhatIs = React.createClass({displayName: "AccordionBodyWhatIs",
@@ -29520,7 +29681,7 @@ var AccordionBodyWhatIs = React.createClass({displayName: "AccordionBodyWhatIs",
 
 module.exports = AccordionBodyWhatIs;
 
-},{"react":158}],176:[function(require,module,exports){
+},{"react":158}],178:[function(require,module,exports){
 var React = require('react'), 
 	AccordionPanelHeading = require('./AccordionPanelHeading'), 
 	AccordionPanelBody = require('./AccordionPanelBody');
@@ -29557,7 +29718,7 @@ module.exports = AccordionPanel;
 
 */
 
-},{"./AccordionPanelBody":177,"./AccordionPanelHeading":178,"react":158}],177:[function(require,module,exports){
+},{"./AccordionPanelBody":179,"./AccordionPanelHeading":180,"react":158}],179:[function(require,module,exports){
 var React = require('react');
 
 var AccordionPanelBody = React.createClass({displayName: "AccordionPanelBody",
@@ -29580,7 +29741,7 @@ var AccordionPanelBody = React.createClass({displayName: "AccordionPanelBody",
 
 module.exports = AccordionPanelBody;
 
-},{"react":158}],178:[function(require,module,exports){
+},{"react":158}],180:[function(require,module,exports){
 var React = require('react');
 
 var AccordionPanelHeading = React.createClass({displayName: "AccordionPanelHeading",
@@ -29605,7 +29766,7 @@ var AccordionPanelHeading = React.createClass({displayName: "AccordionPanelHeadi
 
 module.exports = AccordionPanelHeading;
 
-},{"react":158}],179:[function(require,module,exports){
+},{"react":158}],181:[function(require,module,exports){
 var React = require('react');
 
 var Blockquote = React.createClass({displayName: "Blockquote",
@@ -29621,7 +29782,7 @@ var Blockquote = React.createClass({displayName: "Blockquote",
 
 module.exports = Blockquote;
 
-},{"react":158}],180:[function(require,module,exports){
+},{"react":158}],182:[function(require,module,exports){
 var React = require('react'), 
 	Panel = require('./Panel'), 
 	Blockquote = require('./Blockquote');
@@ -29662,7 +29823,7 @@ var BookSecondEditionPanel = React.createClass({displayName: "BookSecondEditionP
 
 module.exports = BookSecondEditionPanel;
 
-},{"./Blockquote":179,"./Panel":199,"react":158}],181:[function(require,module,exports){
+},{"./Blockquote":181,"./Panel":201,"react":158}],183:[function(require,module,exports){
 var React = require('react'), 
 	$ = window.jQuery || require('jquery');
 
@@ -29716,7 +29877,7 @@ var CommonNameBanner = React.createClass({displayName: "CommonNameBanner",
 
 module.exports = CommonNameBanner;
 
-},{"jquery":3,"react":158}],182:[function(require,module,exports){
+},{"jquery":3,"react":158}],184:[function(require,module,exports){
 var React = require('react');
 
 var DrCrewThumbnail = React.createClass({displayName: "DrCrewThumbnail",
@@ -29748,7 +29909,7 @@ var DrCrewThumbnail = React.createClass({displayName: "DrCrewThumbnail",
 
 module.exports = DrCrewThumbnail;
 
-},{"react":158}],183:[function(require,module,exports){
+},{"react":158}],185:[function(require,module,exports){
 var React = require('react'), 
 	Panel = require('./Panel'), 
 	DrCrewThumbnail = require('./DrCrewThumbnail');
@@ -29779,7 +29940,7 @@ var EmergingTreatmentPanel = React.createClass({displayName: "EmergingTreatmentP
 
 module.exports = EmergingTreatmentPanel;
 
-},{"./DrCrewThumbnail":182,"./Panel":199,"react":158}],184:[function(require,module,exports){
+},{"./DrCrewThumbnail":184,"./Panel":201,"react":158}],186:[function(require,module,exports){
 var React = require('react'), 
 	FactSheetHeader = require('./FactSheetHeader'), 
 	FactSheetAccordion = require('./FactSheetAccordion'), 
@@ -29802,7 +29963,7 @@ var FactSheet = React.createClass({displayName: "FactSheet",
 
 module.exports = FactSheet;
 
-},{"./FactSheetAccordion":185,"./FactSheetHeader":186,"./Footer":188,"./NNFFHeader":196,"react":158}],185:[function(require,module,exports){
+},{"./FactSheetAccordion":187,"./FactSheetHeader":188,"./Footer":190,"./NNFFHeader":198,"react":158}],187:[function(require,module,exports){
 var React = require('react'), 
 	AccordionPanel = require('./AccordionPanel'), 
 	AccordionBodyWhatIs = require('./AccordionBodyWhatIs'), 
@@ -29849,7 +30010,7 @@ var FactSheetAccordion = React.createClass({displayName: "FactSheetAccordion",
 
 module.exports = FactSheetAccordion;
 
-},{"./AccordionBodyBacteria":166,"./AccordionBodyDiagnosis":167,"./AccordionBodyEmerging":168,"./AccordionBodyHighRisk":169,"./AccordionBodyMisdiagnosis":170,"./AccordionBodyOpportunities":171,"./AccordionBodyStatistics":172,"./AccordionBodySymptoms":173,"./AccordionBodyTreatment":174,"./AccordionBodyWhatIs":175,"./AccordionPanel":176,"react":158}],186:[function(require,module,exports){
+},{"./AccordionBodyBacteria":168,"./AccordionBodyDiagnosis":169,"./AccordionBodyEmerging":170,"./AccordionBodyHighRisk":171,"./AccordionBodyMisdiagnosis":172,"./AccordionBodyOpportunities":173,"./AccordionBodyStatistics":174,"./AccordionBodySymptoms":175,"./AccordionBodyTreatment":176,"./AccordionBodyWhatIs":177,"./AccordionPanel":178,"react":158}],188:[function(require,module,exports){
 var React = require('react');
 
 var FactSheetHeader = React.createClass({displayName: "FactSheetHeader",
@@ -29868,7 +30029,7 @@ var FactSheetHeader = React.createClass({displayName: "FactSheetHeader",
 
 module.exports = FactSheetHeader;
 
-},{"react":158}],187:[function(require,module,exports){
+},{"react":158}],189:[function(require,module,exports){
 var React = require('react'), 
 	EmergingTreatmentPanel = require('./EmergingTreatmentPanel'), 
 	BookSecondEditionPanel = require('./BookSecondEditionPanel');
@@ -29892,7 +30053,7 @@ var FeaturedArticles = React.createClass({displayName: "FeaturedArticles",
 
 module.exports = FeaturedArticles;
 
-},{"./BookSecondEditionPanel":180,"./EmergingTreatmentPanel":183,"react":158}],188:[function(require,module,exports){
+},{"./BookSecondEditionPanel":182,"./EmergingTreatmentPanel":185,"react":158}],190:[function(require,module,exports){
 var React = require('react');
 
 var Footer = React.createClass({displayName: "Footer",
@@ -29925,7 +30086,7 @@ var Footer = React.createClass({displayName: "Footer",
 
 module.exports = Footer;
 
-},{"react":158}],189:[function(require,module,exports){
+},{"react":158}],191:[function(require,module,exports){
 var React = require('react'), 
 	NNFFHeader = require('./NNFFHeader'), 
 	ForProfessionalsText = require('./ForProfessionalsText'), 
@@ -29947,7 +30108,7 @@ var ForProfessionals = React.createClass({displayName: "ForProfessionals",
 
 module.exports = ForProfessionals;
 
-},{"./Footer":188,"./ForProfessionalsTable":190,"./ForProfessionalsText":191,"./NNFFHeader":196,"react":158}],190:[function(require,module,exports){
+},{"./Footer":190,"./ForProfessionalsTable":192,"./ForProfessionalsText":193,"./NNFFHeader":198,"react":158}],192:[function(require,module,exports){
 var React = require('react');
 
 var ForProfessionalsTable = React.createClass({displayName: "ForProfessionalsTable",
@@ -29955,7 +30116,7 @@ var ForProfessionalsTable = React.createClass({displayName: "ForProfessionalsTab
 		return (
 			React.createElement("div", {id: "for_professionals_table_container", className: "container"}, 	
 				React.createElement("table", {id: "for_professionals_table", className: "table table-striped table-bordered table-hover"}, 
-					React.createElement("thead", null, 
+					React.createElement("thead", {className: "nnff_table_head"}, 
 						React.createElement("tr", null, 
 							React.createElement("th", null, "Date"), 
 							React.createElement("th", null, "Venue"), 
@@ -30009,7 +30170,7 @@ var ForProfessionalsTable = React.createClass({displayName: "ForProfessionalsTab
 
 module.exports = ForProfessionalsTable;
 
-},{"react":158}],191:[function(require,module,exports){
+},{"react":158}],193:[function(require,module,exports){
 var React = require('react');
 
 var ForProfessionalsText = React.createClass({displayName: "ForProfessionalsText",
@@ -30034,7 +30195,7 @@ var ForProfessionalsText = React.createClass({displayName: "ForProfessionalsText
 
 module.exports = ForProfessionalsText;
 
-},{"react":158}],192:[function(require,module,exports){
+},{"react":158}],194:[function(require,module,exports){
 var React = require('react'), 
 	NNFFJumbotron = require('./NNFFJumbotron'), 
 	CommonNameBanner = require('./CommonNameBanner'), 
@@ -30060,7 +30221,7 @@ var LandingPage = React.createClass({displayName: "LandingPage",
 
 module.exports = LandingPage;
 
-},{"./CommonNameBanner":181,"./FeaturedArticles":187,"./Footer":188,"./MailingListInvitation":193,"./NNFFJumbotron":197,"./WelcomeRow":201,"react":158}],193:[function(require,module,exports){
+},{"./CommonNameBanner":183,"./FeaturedArticles":189,"./Footer":190,"./MailingListInvitation":195,"./NNFFJumbotron":199,"./WelcomeRow":203,"react":158}],195:[function(require,module,exports){
 var React = require('react');
 
 var MailingListInvitation = React.createClass({displayName: "MailingListInvitation",
@@ -30088,7 +30249,7 @@ var MailingListInvitation = React.createClass({displayName: "MailingListInvitati
 
 module.exports = MailingListInvitation;
 
-},{"react":158}],194:[function(require,module,exports){
+},{"react":158}],196:[function(require,module,exports){
 var React = require('react');
 
 var NNFFFounderThumbnail = React.createClass({displayName: "NNFFFounderThumbnail",
@@ -30108,7 +30269,7 @@ var NNFFFounderThumbnail = React.createClass({displayName: "NNFFFounderThumbnail
 
 module.exports = NNFFFounderThumbnail;
 
-},{"react":158}],195:[function(require,module,exports){
+},{"react":158}],197:[function(require,module,exports){
 var React = require('react');
 
 var NNFFFounderThumbnailsHeader = React.createClass({displayName: "NNFFFounderThumbnailsHeader",
@@ -30123,7 +30284,7 @@ var NNFFFounderThumbnailsHeader = React.createClass({displayName: "NNFFFounderTh
 
 module.exports = NNFFFounderThumbnailsHeader;
 
-},{"react":158}],196:[function(require,module,exports){
+},{"react":158}],198:[function(require,module,exports){
 var React = require('react');
 
 var NNFFHeader = React.createClass({displayName: "NNFFHeader",
@@ -30142,7 +30303,7 @@ var NNFFHeader = React.createClass({displayName: "NNFFHeader",
 
 module.exports = NNFFHeader;
 
-},{"react":158}],197:[function(require,module,exports){
+},{"react":158}],199:[function(require,module,exports){
 var React = require('react'), 
 	$ = window.jQuery || require('jquery');
 
@@ -30246,7 +30407,7 @@ var NNFFJumbotron = React.createClass({displayName: "NNFFJumbotron",
 
 module.exports = NNFFJumbotron;
 
-},{"jquery":3,"react":158}],198:[function(require,module,exports){
+},{"jquery":3,"react":158}],200:[function(require,module,exports){
 var React = require('react'), 
 	LandingPage = require('./LandingPage'), 
 	FactSheet = require('./FactSheet'), 
@@ -30298,7 +30459,7 @@ var NnffWebpage = React.createClass({displayName: "NnffWebpage",
 
 module.exports = NnffWebpage;
 
-},{"./AboutUs":159,"./FactSheet":184,"./ForProfessionals":189,"./LandingPage":192,"react":158}],199:[function(require,module,exports){
+},{"./AboutUs":159,"./FactSheet":186,"./ForProfessionals":191,"./LandingPage":194,"react":158}],201:[function(require,module,exports){
 var React = require('react');
 
 var Panel = React.createClass({displayName: "Panel",
@@ -30326,7 +30487,7 @@ var Panel = React.createClass({displayName: "Panel",
 
 module.exports = Panel;
 
-},{"react":158}],200:[function(require,module,exports){
+},{"react":158}],202:[function(require,module,exports){
 var React = require('react');
 
 var TextColumn = React.createClass({displayName: "TextColumn",
@@ -30349,7 +30510,7 @@ var TextColumn = React.createClass({displayName: "TextColumn",
 
 module.exports = TextColumn;
 
-},{"react":158}],201:[function(require,module,exports){
+},{"react":158}],203:[function(require,module,exports){
 var React = require('react'), 
 	TextColumn = require('./TextColumn');
 
@@ -30419,4 +30580,4 @@ var WelcomeRow = React.createClass({displayName: "WelcomeRow",
 
 module.exports = WelcomeRow;
 
-},{"./TextColumn":200,"react":158}]},{},[1]);
+},{"./TextColumn":202,"react":158}]},{},[1]);

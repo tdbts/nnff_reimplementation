@@ -6576,6 +6576,9 @@ body {
   height: 5px;
   background-color: #923039;
 }
+.nnff_table_head {
+  background-color: #dfa7a8;
+}
 #webpage_navbar {
   background-color: #fff;
 }
@@ -7277,7 +7280,6 @@ h1.nnff_jumbotron_header {
   }
 }
 .fact_sheet_table_header {
-  background-color: #dfa7a8;
   vertical-align: text-top;
 }
 #statistics_content_caption {
@@ -7338,9 +7340,6 @@ ul li {
 #for_professionals_table {
   overflow-x: scroll;
   margin-top: 25px;
-}
-#for_professionals_table thead tr {
-  background-color: #dfa7a8;
 }
 .article_title {
   font-style: italic;
@@ -7425,4 +7424,10 @@ h3.section_header {
 }
 .email_link_icon:hover {
   color: #dfa7a8;
+}
+#about_us_table {
+  overflow-x: scroll;
+}
+.about_us_table_link_icon {
+  font-size: 1.5em;
 }

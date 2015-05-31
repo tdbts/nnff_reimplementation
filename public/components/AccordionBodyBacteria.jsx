@@ -6,7 +6,7 @@ var AccordionBodyBacteria = React.createClass({
 			<div id="bacteria_content" className="panel_body_content">
 				<h5 id="bacteria_content_header">The bacteria that cause NF include:</h5>
 				<table id="bacteria_content_table" className="table table-striped table-bordered">
-					<thead>
+					<thead className="nnff_table_head">
 						<tr>
 							<th className="fact_sheet_table_header">Name</th>
 							<th className="fact_sheet_table_header">Where Found?</th>

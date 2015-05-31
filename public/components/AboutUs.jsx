@@ -3,6 +3,8 @@ var React = require('react'),
 	AboutUsDesktopContent = require('./AboutUsDesktopContent'), 
 	AboutUsTabletContent = require('./AboutUsTabletContent'), 
 	AboutUsPhoneContent = require('./AboutUsPhoneContent'), 
+	AboutUsTable = require('./AboutUsTable'),
+	AboutUsOutreach = require('./AboutUsOutreach'),  
 	Footer = require('./Footer');
 
 var AboutUs = React.createClass({
@@ -14,6 +16,8 @@ var AboutUs = React.createClass({
 					<AboutUsDesktopContent />
 					<AboutUsTabletContent />
 					<AboutUsPhoneContent />
+					<AboutUsTable />
+					<AboutUsOutreach />
 				</div>
 				<Footer />
 			</div>
