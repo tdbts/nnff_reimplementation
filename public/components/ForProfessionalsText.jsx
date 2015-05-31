@@ -5,7 +5,7 @@ var ForProfessionalsText = React.createClass({
 		return (
 			<div id="for_professionals_text_container" className="container">
 				<div id="for_professionals_diagnosis_delay_text">
-					<p>The thousands upon thousands of cases NNFF has acquired in its database throughout the 17 years of it&#39;s existence all share one very clear commonality &#8212; and the medical literature agrees, and is in fact quite adamant on this point: </p>
+					<p>The thousands upon thousands of cases NNFF has acquired in its database throughout the 17 years of its existence all share one very clear commonality &#8212; and the medical literature agrees, and is in fact quite adamant on this point: </p>
 					<blockquote id="for_professionals_blockquote">
 						<p className="lead"><em>Delay in diagnosis directly results in decreased chances for survival.</em></p>
 					</blockquote>

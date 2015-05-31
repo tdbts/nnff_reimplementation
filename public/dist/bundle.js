@@ -30178,7 +30178,7 @@ var ForProfessionalsText = React.createClass({displayName: "ForProfessionalsText
 		return (
 			React.createElement("div", {id: "for_professionals_text_container", className: "container"}, 
 				React.createElement("div", {id: "for_professionals_diagnosis_delay_text"}, 
-					React.createElement("p", null, "The thousands upon thousands of cases NNFF has acquired in its database throughout the 17 years of it's existence all share one very clear commonality — and the medical literature agrees, and is in fact quite adamant on this point: "), 
+					React.createElement("p", null, "The thousands upon thousands of cases NNFF has acquired in its database throughout the 17 years of its existence all share one very clear commonality — and the medical literature agrees, and is in fact quite adamant on this point: "), 
 					React.createElement("blockquote", {id: "for_professionals_blockquote"}, 
 						React.createElement("p", {className: "lead"}, React.createElement("em", null, "Delay in diagnosis directly results in decreased chances for survival."))
 					), 
