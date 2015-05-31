@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 }); 
 
-},{"./NnffWebpage":187,"react":158}],2:[function(require,module,exports){
+},{"./NnffWebpage":189,"react":158}],2:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -29486,7 +29486,7 @@ var BookSecondEditionPanel = React.createClass({displayName: "BookSecondEditionP
 
 module.exports = BookSecondEditionPanel;
 
-},{"./Blockquote":172,"./Panel":188,"react":158}],174:[function(require,module,exports){
+},{"./Blockquote":172,"./Panel":190,"react":158}],174:[function(require,module,exports){
 var React = require('react'), 
 	$ = window.jQuery || require('jquery');
 
@@ -29603,7 +29603,7 @@ var EmergingTreatmentPanel = React.createClass({displayName: "EmergingTreatmentP
 
 module.exports = EmergingTreatmentPanel;
 
-},{"./DrCrewThumbnail":175,"./Panel":188,"react":158}],177:[function(require,module,exports){
+},{"./DrCrewThumbnail":175,"./Panel":190,"react":158}],177:[function(require,module,exports){
 var React = require('react'), 
 	FactSheetHeader = require('./FactSheetHeader'), 
 	FactSheetAccordion = require('./FactSheetAccordion'), 
@@ -29626,7 +29626,7 @@ var FactSheet = React.createClass({displayName: "FactSheet",
 
 module.exports = FactSheet;
 
-},{"./FactSheetAccordion":178,"./FactSheetHeader":179,"./Footer":181,"./NNFFHeader":185,"react":158}],178:[function(require,module,exports){
+},{"./FactSheetAccordion":178,"./FactSheetHeader":179,"./Footer":181,"./NNFFHeader":187,"react":158}],178:[function(require,module,exports){
 var React = require('react'), 
 	AccordionPanel = require('./AccordionPanel'), 
 	AccordionBodyWhatIs = require('./AccordionBodyWhatIs'), 
@@ -29751,21 +29751,114 @@ module.exports = Footer;
 
 },{"react":158}],182:[function(require,module,exports){
 var React = require('react'), 
-	NNFFHeader = require('./NNFFHeader');
+	NNFFHeader = require('./NNFFHeader'), 
+	ForProfessionalsText = require('./ForProfessionalsText'), 
+	ForProfessionalsTable = require('./ForProfessionalsTable'), 
+	Footer = require('./Footer');
 
 var ForProfessionals = React.createClass({displayName: "ForProfessionals",
 	render: function () {
 		return (
 			React.createElement("div", {id: "for_professionals_page_container", className: "fullHeightWidth"}, 
-				React.createElement(NNFFHeader, {headerName: "for_professionals", headerText: "For Professionals"})
-			)			
+				React.createElement(NNFFHeader, {headerName: "for_professionals", headerText: "For Medical Professionals"}), 
+				React.createElement(ForProfessionalsText, null), 
+				React.createElement(ForProfessionalsTable, null), 
+				React.createElement(Footer, null)
+			)
 		);
 	}
 });
 
 module.exports = ForProfessionals;
 
-},{"./NNFFHeader":185,"react":158}],183:[function(require,module,exports){
+},{"./Footer":181,"./ForProfessionalsTable":183,"./ForProfessionalsText":184,"./NNFFHeader":187,"react":158}],183:[function(require,module,exports){
+var React = require('react');
+
+var ForProfessionalsTable = React.createClass({displayName: "ForProfessionalsTable",
+	render: function () {
+		return (
+			React.createElement("div", {id: "for_professionals_table_container", className: "container"}, 	
+				React.createElement("table", {id: "for_professionals_table", className: "table table-striped table-bordered table-hover"}, 
+					React.createElement("thead", null, 
+						React.createElement("tr", null, 
+							React.createElement("th", null, "Date"), 
+							React.createElement("th", null, "Venue"), 
+							React.createElement("th", null, "Title"), 
+							React.createElement("th", null, "Link")
+						)
+					), 
+					React.createElement("tbody", null, 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "July 15, 2014"), 
+							React.createElement("td", null, "Clinical Infectious Diseases"), 
+							React.createElement("td", {className: "article_title"}, "Necrotizing Soft-Tissue Infection: Diagnosis and Management"), 
+							React.createElement("td", null, React.createElement("a", {href: "http://cid.oxfordjournals.org/content/44/5/705.long"}, React.createElement("span", {className: "fa fa-external-link"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "June 20, 2014"), 
+							React.createElement("td", null, "Forbes"), 
+							React.createElement("td", {className: "article_title"}, "Antibiotic Pipeline Revival: FDA Approves Cubist Pharmaceuticals' Sivextro For MRSA, Other Serious Skin Infections"), 
+							React.createElement("td", null, React.createElement("a", {href: "http://www.forbes.com/sites/davidkroll/2014/06/20/antibiotic-pipeline-revival-fda-approves-cubist-pharmaceuticals-sivextro-for-mrsa-other-serious-skin-infections/"}, React.createElement("span", {className: "fa fa-external-link"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "June 5, 2014"), 
+							React.createElement("td", null, "NEJM"), 
+							React.createElement("td", {className: "article_title"}, "Single-Dose Oritavancin in the Treatment of Acute Bacterial Skin Infections"), 
+							React.createElement("td", null, React.createElement("a", {href: "http://www.nejm.org/doi/full/10.1056/NEJMoa1310422"}, React.createElement("span", {className: "fa fa-external-link"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "March 27, 2014"), 
+							React.createElement("td", null, "NEJM"), 
+							React.createElement("td", {className: "article_title"}, "Case 10-2014 – A 45-Year-Old Man with a Rash"), 
+							React.createElement("td", null, React.createElement("a", {href: "http://www.nejm.org/doi/full/10.1056/NEJMcpc1304162"}, React.createElement("span", {className: "fa fa-external-link"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "January 22, 2014"), 
+							React.createElement("td", null, "ISRN Infectious Diseases"), 
+							React.createElement("td", {className: "article_title"}, "Necrotizing Fasciitis: Diagnostic Challenges and Current Practices"), 
+							React.createElement("td", null, React.createElement("a", {href: "http://www.hindawi.com/journals/isrn.infectious.diseases/2014/208072/"}, React.createElement("span", {className: "fa fa-external-link"})))
+						), 
+						React.createElement("tr", null, 
+							React.createElement("td", null, "November, 2012"), 
+							React.createElement("td", null, "Journal of Surgical Case Reports"), 
+							React.createElement("td", {className: "article_title"}, "A presentation of facial necrotizing fasciitis with orbital involvement"), 
+							React.createElement("td", null, React.createElement("a", {href: "http://jscr.oxfordjournals.org/content/2013/1/rjs033.full"}, React.createElement("span", {className: "fa fa-external-link"})))
+						)
+					)
+				)
+			)			
+		);
+	}
+});
+
+module.exports = ForProfessionalsTable;
+
+},{"react":158}],184:[function(require,module,exports){
+var React = require('react');
+
+var ForProfessionalsText = React.createClass({displayName: "ForProfessionalsText",
+	render: function () {
+		return (
+			React.createElement("div", {id: "for_professionals_text_container", className: "container"}, 
+				React.createElement("div", {id: "for_professionals_diagnosis_delay_text"}, 
+					React.createElement("p", null, "The thousands upon thousands of cases NNFF has acquired in its database throughout the 17 years of it's existence all share one very clear commonality — and the medical literature agrees, and is in fact quite adamant on this point: "), 
+					React.createElement("blockquote", {id: "for_professionals_blockquote"}, 
+						React.createElement("p", {className: "lead"}, React.createElement("em", null, "Delay in diagnosis directly results in decreased chances for survival."))
+					), 
+					React.createElement("p", null, "The early symptoms of NF, no doubt, are beguiling, like a wolf in sheep's clothing, but in light of the fact that the disease has been reported in so many medical journals throughout the past 20 years, it is critically important that medical professionals consider NF in the differential diagnosis in patients presenting with classic symptoms — pain of out proportion to the injury, high fever, and severe flu-like symptoms.")
+				), 
+				React.createElement("div", {id: "for_professionals_dr_crew_text"}, 
+					React.createElement("h5", null, React.createElement("strong", null, "NO FEE CONSULTATION WITH JOHN CREW, MD")), 
+					React.createElement("p", null, "As we've announced on our website, Dr. John Crew of Seton Medical Center in Daly City, California is consulting at no fee with physicians all over the country — and the world in regard to his ", React.createElement("strong", null, "groundbreaking treatment of NF"), " which earned him a nomination for the prestigious Lister Legacy Prize in early 2014. If you have an NF patient in the throes of a necrotizing soft tissue infection, ", React.createElement("strong", null, "Dr. Crew is at your service 24/7 at no fee. Please call 862-213-5213 at anytime to be put in touch with Dr. Crew immediately. Other journal articles are listed below for your information."))
+				)
+			)			
+		);
+	}
+});
+
+module.exports = ForProfessionalsText;
+
+},{"react":158}],185:[function(require,module,exports){
 var React = require('react'), 
 	NNFFJumbotron = require('./NNFFJumbotron'), 
 	CommonNameBanner = require('./CommonNameBanner'), 
@@ -29791,7 +29884,7 @@ var LandingPage = React.createClass({displayName: "LandingPage",
 
 module.exports = LandingPage;
 
-},{"./CommonNameBanner":174,"./FeaturedArticles":180,"./Footer":181,"./MailingListInvitation":184,"./NNFFJumbotron":186,"./WelcomeRow":190,"react":158}],184:[function(require,module,exports){
+},{"./CommonNameBanner":174,"./FeaturedArticles":180,"./Footer":181,"./MailingListInvitation":186,"./NNFFJumbotron":188,"./WelcomeRow":192,"react":158}],186:[function(require,module,exports){
 var React = require('react');
 
 var MailingListInvitation = React.createClass({displayName: "MailingListInvitation",
@@ -29819,7 +29912,7 @@ var MailingListInvitation = React.createClass({displayName: "MailingListInvitati
 
 module.exports = MailingListInvitation;
 
-},{"react":158}],185:[function(require,module,exports){
+},{"react":158}],187:[function(require,module,exports){
 var React = require('react');
 
 var NNFFHeader = React.createClass({displayName: "NNFFHeader",
@@ -29838,7 +29931,7 @@ var NNFFHeader = React.createClass({displayName: "NNFFHeader",
 
 module.exports = NNFFHeader;
 
-},{"react":158}],186:[function(require,module,exports){
+},{"react":158}],188:[function(require,module,exports){
 var React = require('react'), 
 	$ = window.jQuery || require('jquery');
 
@@ -29942,7 +30035,7 @@ var NNFFJumbotron = React.createClass({displayName: "NNFFJumbotron",
 
 module.exports = NNFFJumbotron;
 
-},{"jquery":3,"react":158}],187:[function(require,module,exports){
+},{"jquery":3,"react":158}],189:[function(require,module,exports){
 var React = require('react'), 
 	LandingPage = require('./LandingPage'), 
 	FactSheet = require('./FactSheet'), 
@@ -29989,7 +30082,7 @@ var NnffWebpage = React.createClass({displayName: "NnffWebpage",
 
 module.exports = NnffWebpage;
 
-},{"./FactSheet":177,"./ForProfessionals":182,"./LandingPage":183,"react":158}],188:[function(require,module,exports){
+},{"./FactSheet":177,"./ForProfessionals":182,"./LandingPage":185,"react":158}],190:[function(require,module,exports){
 var React = require('react');
 
 var Panel = React.createClass({displayName: "Panel",
@@ -30017,7 +30110,7 @@ var Panel = React.createClass({displayName: "Panel",
 
 module.exports = Panel;
 
-},{"react":158}],189:[function(require,module,exports){
+},{"react":158}],191:[function(require,module,exports){
 var React = require('react');
 
 var TextColumn = React.createClass({displayName: "TextColumn",
@@ -30040,7 +30133,7 @@ var TextColumn = React.createClass({displayName: "TextColumn",
 
 module.exports = TextColumn;
 
-},{"react":158}],190:[function(require,module,exports){
+},{"react":158}],192:[function(require,module,exports){
 var React = require('react'), 
 	TextColumn = require('./TextColumn');
 
@@ -30110,4 +30203,4 @@ var WelcomeRow = React.createClass({displayName: "WelcomeRow",
 
 module.exports = WelcomeRow;
 
-},{"./TextColumn":189,"react":158}]},{},[1]);
+},{"./TextColumn":191,"react":158}]},{},[1]);

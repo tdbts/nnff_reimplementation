@@ -7321,3 +7321,27 @@ ul li {
 .list-group-item:hover {
   background-color: #f3f2f2;
 }
+#for_professionals_text_container {
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+}
+@media (min-width: 992px) {
+  #for_professionals_text_container {
+    padding-top: 20px;
+  }
+}
+#for_professionals_text_container p {
+  line-height: 1.5em;
+}
+#for_professionals_dr_crew_text {
+  margin-top: 40px;
+}
+#for_professionals_table {
+  overflow-x: scroll;
+  margin-top: 25px;
+}
+#for_professionals_table thead tr {
+  background-color: #dfa7a8;
+}
+.article_title {
+  font-style: italic;
+}
