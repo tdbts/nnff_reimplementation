@@ -7351,6 +7351,13 @@ ul li {
 #about_us_content_container p {
   line-height: 1.5em;
 }
+.about_us_section {
+  margin-bottom: 50px;
+}
+.about_us_text {
+  text-align: justify;
+  margin-bottom: 20px;
+}
 #nnff_mission_and_vision {
   display: block;
   margin: 0 auto;
@@ -7361,12 +7368,61 @@ ul li {
 .nnff_founder_thumbnail {
   padding: 15px;
   box-shadow: 3px 3px 6px #333;
+  margin-bottom: 25px;
+}
+@media (max-width: 768px) {
+  .nnff_founder_thumbnail {
+    max-width: 275px;
+    display: block;
+    margin: 0 auto 25px auto;
+  }
+}
+.small_screen_thumbnail_image_container {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 576px) {
+  .small_screen_thumbnail_image_container {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .nnff_founder_image {
   width: 230px !important;
   height: 240px !important;
   box-shadow: 3px 3px 6px #333;
 }
-h3 {
+h3.section_header {
   color: #c16365;
+  margin-bottom: 20px;
+}
+.nnff_founder_caption {
+  text-align: center;
+}
+.founder_name {
+  letter-spacing: .5px;
+}
+.caption h5 {
+  font-style: italic;
+  color: #536796;
+}
+.survivor_story_link:hover {
+  text-decoration: none;
+}
+.survivor_story_link h5:hover {
+  font-weight: bold;
+}
+.email_link_icon {
+  color: #c16365;
+}
+.email_link_icon:hover {
+  color: #dfa7a8;
 }
