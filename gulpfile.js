@@ -1,5 +1,4 @@
-var gulp = require('gulp'), 
-	imagemin = require('gulp-imagemin'), 
+var gulp = require('gulp'),  
 	less = require('gulp-less'), 
 	jshint = require('gulp-jshint'), 
 	nodemon = require('gulp-nodemon'), 
@@ -9,35 +8,43 @@ var gulp = require('gulp'),
 	browserify = require('browserify'), 
 	reactify = require('reactify'), 
 	react = require('gulp-react'), 
+	uglify = require('gulp-uglify'), 
+	buffer = require('vinyl-buffer'),
+	gulpif = require('gulp-if'),  
+	minifyCss = require('gulp-minify-css'),	
 	logChanges = require('./src/logChanges');
 
-// gulp.task('minify-images', function () {
-// 	return gulp.src('public/images/*')
-// 		.pipe(imagemin())	
-// 		.pipe(gulp.dest('public/dist/images'));
-// });
+var env = process.env.NODE_ENV || 'development'; 
 
 gulp.task('build-less', function () {
 	console.log("BUILDING LESS.");
 
 	return gulp.src('./public/stylesheets/less/styles.less')
 		.pipe(less())
-		.pipe(gulp.dest('./public/stylesheets/css'));
+		.pipe(gulp.dest('./public/stylesheets/css')) 
+		.pipe(minifyCss()) 
+		.pipe(gulp.dest('./public/dist/build'));
 });
 
 gulp.task('browserify', function () { 
 	console.log("BUNDLING FILES WITH BROWSERIFY and REACTIFY.");
 
 	var bundler = browserify({
+		
 		entries: ['./public/components/index.jsx'], 
-		extensions: ['.jsx']
-	}).transform(reactify);
+		extensions: ['.jsx'], 
+		debug: env === 'development'
+
+	})
+	.transform(reactify);
 
 	var bundle = function () {
 		return bundler
 			.bundle()
-			.pipe(source('bundle.js'))
-			.pipe(gulp.dest('./public/dist'));
+			.pipe(source('bundle.js')) 
+			.pipe(buffer()) 
+			.pipe(gulpif(env === 'production', uglify()))
+			.pipe(gulp.dest('./public/dist/build'));
 	};
 
 	return bundle();
